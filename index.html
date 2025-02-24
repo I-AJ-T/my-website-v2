@@ -12,22 +12,74 @@
 
 <body>
     <nav id="nav_menu"> <!--Navigation menu options-->
-        <img src="images/seven_knights_logo.png" alt="Seven Knights Logo">
-        <ul class="nav_links">
+        <ul class="nav_links"> <!--Flex container-->
+            <li><a href="index.html" id="logo_spot">
+                    <p id="logo_text">text</p>
+                </a></li>
             <li><a href="index.html" class="current">Home</a></li>
             <li><a href="html/pvp_pve_page.html">PVP & PVE</a></li>
             <li><a href="html/heroes_pets_page.html">Heroes & Pets</a></li>
-            <li><a href="html/check_shop_page.html" class="lastitem">Checklist & Shop</a></li>
+            <li><a href="html/check_shop_page.html">Checklist & Shop</a></li>
         </ul>
     </nav>
-    <header>
-
+    <header> <!--Contains the video and related text-->
+        <section id="home_page_video_container"> <!--Flex container-->
+            <div id="home_page_video_box"> <!--Homepage video-->
+                <video autoplay loop id="home_page_video">
+                    <source src="videos/gameplay.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="home_page_video_text_box"> <!--Text next to video-->
+                <h1>Are you ready to climb the stages?</h1>
+                <p class="summon_text"><strong>Click Summon to join the heroes</strong></p>
+                <p class="summon_text" id="download_arrows">&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;</p>
+                <a href="https://skidle.netmarble.com/en" target="_blank" id="download_button">Summon</a>
+            </div>
+        </section>
     </header>
     <main>
-
+        <section> <!--This Section is about how to play the game and other aspects-->
+            <h1 class="overview_text">&darr;Game overview&darr;</h1>
+            <div id="game_overview_container"> <!--Flex container-->
+                <div id="game_overview_gameplay">
+                    <img src="images/main_screen.png" alt="Screenshot of Seven Knights Gameplay">
+                </div>
+                <div id="game_overview_text">
+                    <h2 class="main_section_heading_text">How to play the game:</h2>
+                    <p>The <em>idle</em> portion of the game is <strong>stage</strong> based. Here players gain
+                        resources to
+                        level up their heroes to be able to fight the stage bosses. The higher a player goes in the
+                        stages,
+                        the
+                        harder the stages get!</p>
+                    <p class="list_heading">Here's a <strong>recommended</strong> way to play the game:</p>
+                    <ol class="ol_section_list">
+                        <li>Fight through the stages for resources</li>
+                        <li>Use resources collected to level up heroes</li>
+                        <li>Fight the stage Boss</li>
+                        <li>Repeat</li>
+                    </ol>
+                    <p id="note_img_clear"><strong>NOTE:</strong></p>
+                    <p>If you are <strong>unable</strong> to beat the boss let the game idle for a while so you can
+                        accumulate
+                        resources to level up your heroes to be strong enough to beat the boss. Then start repeating the
+                        listed
+                        process again.</p>
+                    <p class="list_heading">List of other game aspects&cudarrr;</p>
+                    <ul class="ul_section_list">
+                        <li><a href="html/pvp_pve_page.html">PVP and PVE</a></li>
+                        <li><a href="html/heroes_pets_page.html">Heroes and Pets</a></li>
+                        <li><a href="html/check_shop_page.html">Checklist and Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="bottom_links" id="home_img_clear"> <!--For the return to top link-->
+            <p><a href="#top">Return to Top</a></p>
+        </section>
     </main>
     <footer>
-        <p>&copy; <em>Aj Sison</em> 2/16/2025</p>
+        <p>&copy; <em>Aj Sison</em> 2/24/2025</p>
         <small>
             <marquee>~(-.-)~</marquee>
         </small>

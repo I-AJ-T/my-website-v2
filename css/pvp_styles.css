@@ -1,0 +1,43 @@
+
+/*Space here to make a custom variable*/ /**/
+
+/*
+=====================================================
+|                   Template                        |
+=====================================================
+*/
+/*============  End of Template  ============*/
+
+/*Date Last Modified: 2/24/2025*/
+/*Author: Aj Sison*/
+
+/*
+=====================================================
+|                   Header Changes                  |
+=====================================================
+*/
+#heading_text_box {
+    background: url(../images/tile.png);
+    text-align: center;
+    padding: 2em 0;
+    border-bottom: 10px ridge #000000;
+}
+
+#heading_text_box  h1 {
+    font-size: 5em;
+    -webkit-text-stroke: 3px #000000;
+    color: #ffd700;
+    margin: 0;
+}
+/*============  End of Header Changes  ============*/
+/*
+=====================================================
+|                  Media Queries                    |
+=====================================================
+*/
+@media only screen and (max-width: 500px) {
+    #heading_text_box  h1 {
+        font-size: 4em;
+    }
+}
+/*============  End of Media Queries  ============*/

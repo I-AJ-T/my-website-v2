@@ -1,0 +1,81 @@
+
+/*Space here to make a custom variable*/ /**/
+
+/*
+=====================================================
+|                   Template                        |
+=====================================================
+*/
+/*============  End of Template  ============*/
+
+/*Date Last Modified: 2/24/2025*/
+/*Author: Aj Sison*/
+
+/*
+=====================================================
+|          Hero Rarity Image Grid Changes           |
+=====================================================
+*/
+section#rarity_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    grid-template-areas: 
+    "hig leg uni epi"
+    "rar nor ext emp";
+    padding: 2em;
+}
+
+#hig {
+    grid-area: hig;
+}
+
+#leg {
+    grid-area: leg;
+}
+
+#uni {
+    grid-area: uni;
+}
+
+#epi {
+    grid-area: epi;
+}
+
+#rar {
+    grid-area: rar;
+}
+
+#nor {
+    grid-area: nor;
+}
+
+#ext {
+    grid-area: ext;
+}
+
+#emp {
+    grid-area: emp;
+}
+
+img.rarity_grid_img_size {
+    max-height: 100%;
+}
+/*============  End of Hero Rarity Image Grid Changes  ============*/
+/*
+=====================================================
+|                  Media Queries                    |
+=====================================================
+*/
+@media only screen and (max-width: 1200) {
+    section#rarity_grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "hig leg uni"
+        "epi rar nor"
+        "ext emp emp";
+    }
+}
+/*============  End of Media Queries  ============*/
