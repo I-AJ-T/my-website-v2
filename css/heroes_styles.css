@@ -66,6 +66,15 @@ img.rarity_grid_img_size {
 /*============  End of Hero Rarity Image Grid Changes  ============*/
 /*
 =====================================================
+|              Hero Stat List Changes               |
+=====================================================
+*/
+ul.hero_stat_list {
+    margin: 0;
+}
+/*============  End of Hero Stat List Changes  ============*/
+/*
+=====================================================
 |                  Media Queries                    |
 =====================================================
 */
@@ -77,11 +86,38 @@ img.rarity_grid_img_size {
         grid-template-areas: 
         "hig leg uni"
         "epi rar nor"
-        "ext emp emp";
+        "ext ext ext";
     }
     img.rarity_grid_img_size {
         max-height: 80%;
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    section#rarity_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 15px;
+        grid-template-areas: 
+        "hig leg"
+        "uni epi"
+        "rar nor"
+        "ext ext";
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    section#rarity_grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "hig"
+        "leg"
+        "uni" 
+        "epi"
+        "rar" 
+        "nor"
+        "ext";
     }
 }
 /*============  End of Media Queries  ============*/

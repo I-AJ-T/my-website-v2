@@ -28,11 +28,26 @@ main {
 
 p {
     font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+ol {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1.5em;
 }
 
 li {
     font-size: 1.5em;
+    font-style: italic;
+    margin-top: 0;
 }
+
 footer {
     padding: 40px 20px 40px 20px;
     background-color: #000000;
@@ -54,8 +69,9 @@ footer {
 }
 
 #nav_menu ul li {
-    font-size: 1.5em;
+    font-size: 2em;
     flex-basis: 20%;
+    font-style: normal;
 }
 
 #nav_menu ul li a {
@@ -91,7 +107,6 @@ p#logo_text {
     font-size: 1em;
 }
 /*============  End of Navigation Bar Changes  ============*/
-
 /*
 =====================================================
 |         Home Page Video Flex Box Changes          |
@@ -100,7 +115,7 @@ p#logo_text {
 section#home_page_video_container {
     display: flex;
     flex-direction: row;
-    padding: 6em 1em;
+    padding: 3em 1em;
     background: url(images/tile.png);
     border-bottom: 10px ridge #000000;
 }
@@ -110,8 +125,8 @@ div#home_page_video_box {
 }
 
 video#home_page_video {
-    width: 428px; 
-    height: 926px;
+    width: 256.8px; 
+    height: 555.6px;
     display: block;
     margin: auto;
     border: 10px ridge #000000;
@@ -125,25 +140,25 @@ div#home_page_video_text_box {
 }
 
 div#home_page_video_text_box h1 {
-    font-size: 6em;
-    margin-top: 0.5em;
+    font-size: 4.5em;
+    margin-top: 0;
 }
 
 p.summon_text {
-    font-size: 4em;
+    font-size: 3em;
     margin: 0;
 }
 
 p#download_arrows {
     margin-bottom: 0.5em;
-    font-size: 6em;
+    font-size: 3em;
 }
 
 a#download_button {
     background-color: #ffd700;
     border: 6px solid black;
     border-radius: 20px;
-    font-size: 5em;
+    font-size: 3em;
     padding: 15px;
     color: #000000;
     text-decoration: none;
@@ -163,7 +178,7 @@ a#download_button:hover {
 h1.overview_text {
     text-align: center;
     margin-top: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
     font-size: 4em;
 }
 
@@ -178,6 +193,8 @@ div#game_overview_gameplay img {
     margin: auto;
     width: 60%;
     height: auto;
+    max-width: 348.212px;
+    max-height: 753.375px;
     border: 10px ridge #000000;
 }
 
@@ -190,7 +207,9 @@ div#game_overview_text {
 }
 
 .main_section_heading_text {
-    font-size:2em;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .main_section_heading_text::first-letter {
@@ -198,25 +217,20 @@ div#game_overview_text {
 }
 
 p.list_heading {
-    text-indent: 1em;
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 p.list_heading::first-letter {
     font-size: 1.5em;
 }
 
-ul.ul_section_list li {
-    font-size:  1.5em;
-    font-style: italic;
-    margin-left: 5%;
+p#home_note {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-ol.ol_section_list li {
-    font-size:  1.5em;
-    font-style: italic;
-    margin-left: 5%;
-}
 /*============  End of Gameoverview Flex Box Changes  ============*/
 /*
 =====================================================
@@ -233,6 +247,12 @@ section.bottom_links {
 |                  Media Queries                    |
 =====================================================
 */
+@media only screen and (max-width: 1350px) {
+    #nav_menu ul li {
+        font-size: 1.5em;
+    }
+}
+
 @media only screen and (max-width: 1140px) {
     #nav_menu ul.nav_links {
         flex-direction: column;
@@ -243,6 +263,19 @@ section.bottom_links {
     div#game_overview_container {
         flex-direction: column;
     }    
+    video#home_page_video {
+        width: 342.4px; 
+        height: 740.8px;
+    }
+    #nav_menu ul li {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    h1.overview_text {
+        font-size: 3em;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -261,6 +294,34 @@ section.bottom_links {
     }
     a#download_button {
         font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    h1.overview_text {
+        font-size: 2.3em;
+        margin-top: 1em;
+    }
+    div#game_overview_container {
+        padding-top: 0;
+    }
+    div#game_overview_gameplay img {
+        margin-bottom: 1em;
+    }
+    h2.main_section_heading_text {
+        font-size: 1em;
+    }
+    .main_section_heading_text::first-letter {
+        font-size: 1em;
+    }  
+    p {
+        font-size: 0.85em;
+    }
+    p.list_heading::first-letter {
+        font-size: 1em;
+    }
+    li {
+        font-size: 0.85em;
     }
 }
 /*============  End of Media Queries  ============*/
