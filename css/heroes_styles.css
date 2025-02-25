@@ -27,6 +27,11 @@ section#rarity_grid {
     padding: 2em;
 }
 
+img.rarity_grid_img_size {
+    max-height: 100%;
+    width: auto;
+}
+
 #hig {
     grid-area: hig;
 }
@@ -58,24 +63,25 @@ section#rarity_grid {
 #emp {
     grid-area: emp;
 }
-
-img.rarity_grid_img_size {
-    max-height: 100%;
-}
 /*============  End of Hero Rarity Image Grid Changes  ============*/
 /*
 =====================================================
 |                  Media Queries                    |
 =====================================================
 */
-@media only screen and (max-width: 1200) {
+@media only screen and (max-width: 1200px) {
     section#rarity_grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        grid-gap: 25px;
         grid-template-areas: 
         "hig leg uni"
         "epi rar nor"
         "ext emp emp";
+    }
+    img.rarity_grid_img_size {
+        max-height: 80%;
+        width: auto;
     }
 }
 /*============  End of Media Queries  ============*/
