@@ -8,7 +8,7 @@
 */
 /*============  End of Template  ============*/
 
-/*Date Last Modified: 2/24/2025*/
+/*Date Last Modified: 2/25/2025*/
 /*Author: Aj Sison*/
 
 /*
@@ -54,7 +54,6 @@ footer {
     color: #ffffff;
 }
 /*============  End of Global Changes  ============*/
-
 /*
 =====================================================
 |          Navigation Bar Changes (Flex)            |
@@ -109,7 +108,7 @@ p#logo_text {
 /*============  End of Navigation Bar Changes  ============*/
 /*
 =====================================================
-|         Home Page Video Flex Box Changes          |
+|         Homepage Video Flex Box Changes          |
 =====================================================
 */
 section#home_page_video_container {
@@ -152,6 +151,7 @@ p.summon_text {
 p#download_arrows {
     margin-bottom: 0.5em;
     font-size: 3em;
+    color: #000000;
 }
 
 a#download_button {
@@ -230,7 +230,6 @@ p#home_note {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 /*============  End of Gameoverview Flex Box Changes  ============*/
 /*
 =====================================================
@@ -247,12 +246,14 @@ section.bottom_links {
 |                  Media Queries                    |
 =====================================================
 */
+/*Changes nav menu text size*/
 @media only screen and (max-width: 1350px) {
     #nav_menu ul li {
         font-size: 1.5em;
     }
 }
 
+/*Changes nav menu into a row, the size of nav text, and homepage video size*/
 @media only screen and (max-width: 1140px) {
     #nav_menu ul.nav_links {
         flex-direction: column;
@@ -272,12 +273,14 @@ section.bottom_links {
     }
 }
 
+/*Changes homepage overview text size*/
 @media only screen and (max-width: 635px) {
     h1.overview_text {
         font-size: 3em;
     }
 }
 
+/*Changes hompage video size, and the size of the text next to it*/
 @media only screen and (max-width: 500px) {
     video#home_page_video {
         width: 278.2px; 
@@ -297,6 +300,7 @@ section.bottom_links {
     }
 }
 
+/*Changes the size of all the text for the game overview section*/
 @media only screen and (max-width: 485px) {
     h1.overview_text {
         font-size: 2.3em;

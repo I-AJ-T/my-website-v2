@@ -44,12 +44,14 @@ h1#overview_and_arrows {
 |                  Media Queries                    |
 =====================================================
 */
+/*Changes heading text size*/
 @media only screen and (max-width: 635px) {
     #heading_text_box  h1 {
         font-size: 4em;
     }
 }
 
+/*Changes overview text size*/
 @media only screen and (max-width: 600px) {
     h1#pvp_overview {
         font-size: 2.8em;

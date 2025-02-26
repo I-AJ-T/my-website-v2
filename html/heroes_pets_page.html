@@ -14,7 +14,7 @@
 
 <body>
     <nav id="nav_menu"> <!--Navigation menu options-->
-        <ul class="nav_links">
+        <ul class="nav_links"> <!--Flex container-->
             <li><a href="../index.html" id="logo_spot">
                     <p id="logo_text">text</p>
                 </a></li>
@@ -31,71 +31,72 @@
         </section>
     </header>
     <main>
+        <h1 class="overview_text">Heroes and Pets</h1> <!--This the overview text-->
+        <h1 class="overview_text" id="overview_and_arrows">&darr;Overview&darr;</h1>
+        <p>To gain more heroes you have to <strong>summon</strong> them. Heroes are summoned using either
+            <strong>summoning tickets</strong> or <strong>gems</strong>. Summoned heroes come in different
+            <strong>rarities</strong>! The higher the rarity the stronger the hero!
+        </p>
         <section> <!--This Section is about the Hero Summons-->
-            <h1 class="overview_text">Heroes and Pets</h1>
-            <h1 class="overview_text" id="overview_and_arrows">&darr;Overview&darr;</h1>
-            <p>To gain more heroes you have to <strong>summon</strong> them. Heroes are summoned using either
-                <strong>summoning tickets</strong> or <strong>gems</strong>. Summoned heroes come in different
-                <strong>rarities</strong>! The higher the rarity the stronger the hero!
+            <!--Make into a flex box-->
+            <!--Add image of hero summoning screen later-->
+            <h2 class="main_section_heading_text">About Hero Stats:</h2>
+            <p class="list_heading">Hero rarities listed from <strong>strongest</strong> to <em>weakest</em>
+                &cudarrr;
             </p>
-            <section> <!--make into a flex box-->
-                <!--Add image of hero summoning screen later-->
-                <h2 class="main_section_heading_text">About Hero Stats:</h2>
-                <p class="list_heading">Hero rarities listed from <strong>strongest</strong> to <em>weakest</em>
-                    &cudarrr;
-                </p>
-                <ul class="ul_section_list">
-                    <li>High Lord</li>
-                    <li>Legendary</li>
-                    <li>Unique</li>
-                    <li>Epic</li>
-                    <li>Rare</li>
-                    <li>Normal</li>
-                    <li>Extra</li>
-                </ul>
-            </section>
-            <section id="rarity_grid"> <!--This section is for the grid of images-->
-                <div id="hig">
-                    <img src="../images/high_lord.png" alt="Image of a High Lord card" class="rarity_grid_img_size">
-                </div>
-                <div id="leg">
-                    <img src="../images/legendary.png" alt="Image of a Legendary card" class="rarity_grid_img_size">
-                </div>
-                <div id="uni">
-                    <img src="../images/unique.png" alt="Image of a Unique card" class="rarity_grid_img_size">
-                </div>
-                <div id="epi">
-                    <img src="../images/epic.png" alt="Image of a Epic card" class="rarity_grid_img_size">
-                </div>
-                <div id="rar">
-                    <img src="../images/rare.png" alt="Image of a Rare card" class="rarity_grid_img_size">
-                </div>
-                <div id="nor">
-                    <img src="../images/normal.png" alt="Image of a Normal card" class="rarity_grid_img_size">
-                </div>
-                <div id="ext">
-                    <img src="../images/extra.png" alt="Image of a Extra card" class="rarity_grid_img_size">
-                </div>
-            </section>
-            <section> <!--Add image of hero codex screen later-->
-                <p>The heroes are split into collections that are part of a codex. In the codex, as hero collections are
-                    completed stat increases are gained. Stat increases gained from the codex are applied universally.
-                    This
-                    means that it is applied to a player's team as a whole regardless of what heroes are in the team.
-                </p>
-                <marquee>
-                    <p class="important_text"><strong>!!!IMPORTANT!!!</strong></p>
-                </marquee>
-                <p>Yes, players can spend <em>real money</em> on the game in the shop to speed up their leveling
-                    process.
-                    <strong>However</strong>, the game is <strong>very generous</strong> in that if players are actively
-                    playing and participating in events, spending real money is not needed. The game gives out a lot of
-                    its
-                    in-game currencies as players progress through the game. <strong>JUST KEEP PLAYING!</strong>
-                </p>
-            </section>
+            <ul class="ul_section_list">
+                <li>High Lord</li>
+                <li>Legendary</li>
+                <li>Unique</li>
+                <li>Epic</li>
+                <li>Rare</li>
+                <li>Normal</li>
+                <li>Extra</li>
+            </ul>
+        </section>
+        <section id="rarity_grid"> <!--This section is for the grid of images-->
+            <div id="hig">
+                <img src="../images/high_lord.png" alt="Image of a High Lord card" class="rarity_grid_img_size">
+            </div>
+            <div id="leg">
+                <img src="../images/legendary.png" alt="Image of a Legendary card" class="rarity_grid_img_size">
+            </div>
+            <div id="uni">
+                <img src="../images/unique.png" alt="Image of a Unique card" class="rarity_grid_img_size">
+            </div>
+            <div id="epi">
+                <img src="../images/epic.png" alt="Image of a Epic card" class="rarity_grid_img_size">
+            </div>
+            <div id="rar">
+                <img src="../images/rare.png" alt="Image of a Rare card" class="rarity_grid_img_size">
+            </div>
+            <div id="nor">
+                <img src="../images/normal.png" alt="Image of a Normal card" class="rarity_grid_img_size">
+            </div>
+            <div id="ext">
+                <img src="../images/extra.png" alt="Image of a Extra card" class="rarity_grid_img_size">
+            </div>
+        </section>
+        <section> <!--Make this into a felx box-->
+            <p>The heroes are split into collections that are part of a codex. In the codex, as hero collections are
+                completed stat increases are gained. Stat increases gained from the codex are applied universally.
+                This
+                means that it is applied to a player's team as a whole regardless of what heroes are in the team.
+            </p>
+            <marquee>
+                <p class="important_text"><strong>!!!IMPORTANT!!!</strong></p>
+            </marquee>
+            <p>Yes, players can spend <em>real money</em> on the game in the shop to speed up their leveling
+                process.
+                <strong>However</strong>, the game is <strong>very generous</strong> in that if players are actively
+                playing and participating in events, spending real money is not needed. The game gives out a lot of
+                its
+                in-game currencies as players progress through the game. <strong>JUST KEEP PLAYING!</strong>
+            </p>
+            <!--Add image of hero codex screen-->
         </section>
         <section> <!--This Section is about strengthening your heroes and make a flex box-->
+            <!--Add image of hero leveling screen-->
             <h2 class="main_section_heading_text">About Hero Stats:</h2>
             <p>There are many other ways to increase the <strong>strength</strong> of the heroes.</p>
             <p class="list_heading">Here is a list of ways to increase a hero's strength and the resources needed
@@ -143,7 +144,6 @@
                     <li><small>Costume Tickets</small></li>
                 </ul>
             </ul>
-            <!--Add image of hero leveling screen later-->
         </section>
         <section> <!--This Section is about pets and make a flex box-->
             <h2 class="main_section_heading_text">About Pets:</h2>

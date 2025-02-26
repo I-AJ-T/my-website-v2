@@ -78,6 +78,7 @@ ul.hero_stat_list {
 |                  Media Queries                    |
 =====================================================
 */
+/*Changes grid settings*/
 @media only screen and (max-width: 1200px) {
     section#rarity_grid {
         grid-template-columns: repeat(3, 1fr);
@@ -94,6 +95,7 @@ ul.hero_stat_list {
     }
 }
 
+/*Changes grid settings*/
 @media only screen and (max-width: 765px) {
     section#rarity_grid {
         grid-template-columns: repeat(2, 1fr);
@@ -107,6 +109,7 @@ ul.hero_stat_list {
     }
 }
 
+/*Changes grid settings*/
 @media only screen and (max-width: 500px) {
     section#rarity_grid {
         grid-template-columns: repeat(1, 1fr);
