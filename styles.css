@@ -56,6 +56,33 @@ footer {
 /*============  End of Global Changes  ============*/
 /*
 =====================================================
+|                   Google Fonts                        |
+=====================================================
+*/
+.honk_text {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+}
+
+.kumar_text {
+    font-family: "Kumar One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.luckiest_guy_text {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+/*============  End of Google Fonts  ============*/
+/*
+=====================================================
 |          Navigation Bar Changes (Flex)            |
 =====================================================
 */
@@ -82,9 +109,9 @@ footer {
     font-weight: bold;
     padding: 5% 0;
 }
-
+  
 #nav_menu ul li a.current {
-    color: #ffd900;
+    background-color: #ffd900;
 }
 
 #nav_menu ul li a:hover {
