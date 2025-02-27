@@ -1,5 +1,5 @@
-
-/*Space here to make a custom variable*/ /**/
+/*Space here to make a custom variable*/
+/**/
 
 /*
 =====================================================
@@ -17,28 +17,23 @@
 =====================================================
 */
 #heading_text_box {
-    background: url(../images/tile.png);
+    background: url(../images/gemini_background_2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 300%;
+    background-position: center;
     text-align: center;
     padding: 2em 0;
     border-bottom: 10px ridge #000000;
 }
 
-#heading_text_box  h1 {
+#heading_text_box h1 {
     font-size: 5em;
     -webkit-text-stroke: 3px #000000;
-    color: #ffd700;
+    color: #ffffff;
     margin: 0;
 }
+
 /*============  End of Header Changes  ============*/
-/*
-=====================================================
-|             Changes to Overview Text              |
-=====================================================
-*/
-h1#overview_and_arrows {
-    margin-top: 0;
-}
-/*============  End of Changes to Overview Text  ============*/
 /*
 =====================================================
 |                  Media Queries                    |
@@ -46,7 +41,7 @@ h1#overview_and_arrows {
 */
 /*Changes heading text size*/
 @media only screen and (max-width: 635px) {
-    #heading_text_box  h1 {
+    #heading_text_box h1 {
         font-size: 4em;
     }
 }
@@ -57,4 +52,5 @@ h1#overview_and_arrows {
         font-size: 2.8em;
     }
 }
+
 /*============  End of Media Queries  ============*/
