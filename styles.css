@@ -287,7 +287,7 @@ a#netmarble_site {
 =====================================================
 */
 /*Changes nav menu text size*/
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1555px) {
     #nav_menu ul li {
         font-size: 1.5em;
     }
