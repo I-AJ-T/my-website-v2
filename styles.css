@@ -149,19 +149,19 @@ section#home_page_video_container {
 }
 
 div#home_page_video_box {
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 
 video#home_page_video {
-    width: 256.8px; 
-    height: 555.6px;
+    width: 257px; 
+    height: 555px;
     display: block;
     margin: auto;
     border: 10px ridge #000000;
 }
 
 div#home_page_video_text_box {
-    flex-basis: 50%;
+    flex-basis: 60%;
     text-align: center;
     font-weight: bold;
 }
@@ -226,6 +226,14 @@ div#game_overview_gameplay img {
     border: 10px ridge #000000;
 }
 
+#gameplay_pic_text_box {
+    text-align: center;
+}
+
+#gameplay_pic_text_box figcaption {
+    margin-top: 1em;
+}
+
 div#game_overview_gameplay {
     flex-basis: 50%;
 }
@@ -261,12 +269,16 @@ p#home_note {
 /*============  End of Gameoverview Flex Box Changes  ============*/
 /*
 =====================================================
-|           Div Changes for Bottom Links            |
+|      Div Changes for Bottom Links and Footer      |
 =====================================================
 */
 section.bottom_links {
     padding-top: 2%;
     font-size: 0.8em;
+}
+
+a#netmarble_site {
+    color: #ffffff;
 }
 /*============  End of Div Changes for Bottom Links  ============*/
 /*
@@ -275,7 +287,7 @@ section.bottom_links {
 =====================================================
 */
 /*Changes nav menu text size*/
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1550px) {
     #nav_menu ul li {
         font-size: 1.5em;
     }
@@ -303,8 +315,8 @@ section.bottom_links {
 
 /*Changes homepage overview text size*/
 @media only screen and (max-width: 635px) {
-    h1.overview_text {
-        font-size: 3em;
+    h1#overview_text {
+        font-size: 2em;
     }
 }
 
@@ -315,23 +327,20 @@ section.bottom_links {
         height: 601.9px;
     }
     div#home_page_video_text_box h1 {
-        font-size: 4em;
-    }
-    p.summon_text {
         font-size: 3em;
     }
-    p#download_arrows {
-        font-size: 4em;
+    p#summon_text {
+        font-size: 2em;
     }
     a#download_button {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
 /*Changes the size of all the text for the game overview section*/
 @media only screen and (max-width: 485px) {
-    h1.overview_text {
-        font-size: 2.3em;
+    h1#overview_text {
+        font-size: 1.8em;
         margin-top: 1em;
     }
     div#game_overview_container {

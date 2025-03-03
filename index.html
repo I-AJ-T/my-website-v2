@@ -10,7 +10,11 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Kumar+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Kumar+One&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/073fc85712.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://sgimage.netmarble.com/favicon/skiagb/favicon_192.ico">
     <title>Seven Knights | Home</title>
 </head>
 
@@ -20,10 +24,16 @@
             <li><a href="index.html" id="logo_spot">
                     <p id="logo_text">text</p>
                 </a></li>
-            <li class="honk_text"><a href="index.html" class="current">Home</a></li>
-            <li class="honk_text"><a href="html/pvp_pve_page.html">PVP | PVE</a></li>
-            <li class="honk_text"><a href="html/heroes_pets_page.html">Heroes | Pets</a></li>
-            <li class="honk_text"><a href="html/check_shop_page.html">Checklist | Shop</a></li>
+            <li class="honk_text"><a href="index.html" class="current"><i class="fa-solid fa-house fa-sm"
+                        style="color: #818181;"></i> Home</a></li>
+            <li class="honk_text"><a href="html/pvp_pve_page.html"><i class="fa-solid fa-khanda fa-sm"
+                        style="color: #818181;"></i> PVP | PVE</a></li>
+            <li class="honk_text"><a href="html/heroes_pets_page.html"><i class="fa-solid fa-person fa-sm"
+                        style="color: #818181;"></i> Heroes | <i class="fa-solid fa-dog fa-sm"
+                        style="color: #818181;"></i> Pets</a></li>
+            <li class="honk_text"><a href="html/check_shop_page.html"><i class="fa-solid fa-list-check fa-sm"
+                        style="color: #818181;"></i> Checklist | <i class="fa-solid fa-shop fa-sm"
+                        style="color: #818181;"></i> Shop</a></li>
         </ul>
     </nav>
     <header> <!--Contains the video and related text-->
@@ -36,7 +46,8 @@
             <div id="home_page_video_text_box"> <!--Text next to video-->
                 <h1 class="luckiest_guy_text">Are you ready to climb the stages?</h1>
                 <p class="luckiest_guy_text" id="summon_text">Click Summon to join the heroes</p>
-                <a href="https://skidle.netmarble.com/en" target="_blank" class="luckiest_guy_text" id="download_button">Summon</a>
+                <a href="https://skidle.netmarble.com/en" target="_blank" class="luckiest_guy_text"
+                    id="download_button">Summon</a>
             </div>
         </section>
     </header>
@@ -45,7 +56,10 @@
         <section> <!--This Section is about how to play the game and other aspects-->
             <div id="game_overview_container"> <!--Flex container-->
                 <div id="game_overview_gameplay">
-                    <img src="images/main_screen.png" alt="Screenshot of Seven Knights Gameplay">
+                    <figure id="gameplay_pic_text_box">
+                        <img src="images/main_screen.png" alt="Screenshot of Seven Knights Gameplay">
+                        <figcaption>Screenshot of Gameplay</figcaption>
+                    </figure>
                 </div>
                 <div id="game_overview_text"> <!--Section under the overview text-->
                     <h2 class="main_section_heading_text">How to play the game:</h2>
@@ -83,6 +97,8 @@
     </main>
     <footer>
         <p>&copy; <em>Aj Sison</em> 2/24/2025</p>
+        <p>I am not the owner of this game. This is for educational purposes. All images and videos of the game belong to &copy; Netmarble Corp. & Netmarble Nexus Inc. All Rights Reserved.</p>
+        <p><a href="https://netmarble.com/en" id="netmarble_site">Netmarble's Website</a></p>
         <small>
             <marquee>~(-.-)~</marquee>
         </small>
