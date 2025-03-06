@@ -32,8 +32,33 @@
     color: #ffffff;
     margin: 0;
 }
-
 /*============  End of Header Changes  ============*/
+/*
+=====================================================
+|               PVP Flex Container                  |
+=====================================================
+*/
+div#pvp_pics_box {
+    display:flex;
+    flex-direction: row;
+    padding: 2em 1em;
+    justify-content: space-evenly;
+}
+
+img#pvp_pic_1 {
+    max-width: 348.212px;
+    max-height: 753.375px;
+    border: 10px ridge #000000;
+    flex-basis: 50%;
+}
+
+img#pvp_pic_2 {
+    max-width: 348.212px;
+    max-height: 753.375px;
+    border: 10px ridge #000000;
+    flex-basis: 50%;
+}
+/*============  End of PVP Flex Container  ============*/
 /*
 =====================================================
 |                  Media Queries                    |
