@@ -121,6 +121,8 @@ ul.hero_stat_list {
         "rar" 
         "nor"
         "ext";
+        justify-content: center;
+        align-items: center;
     }
 }
 /*============  End of Media Queries  ============*/

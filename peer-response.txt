@@ -1,3 +1,28 @@
-Peer #1's Feedback 
+Matt Frix's Feedback of my website: 
 
-Peer #2's Feedback
+Hey, Aj, cool website! I love the idea, and you made great use of flex boxes with your changes in version two!
+- Your website demonstrates excellent responsiveness.
+- Some readers, myself included, will greatly appreciate your use of a larger font size.
+- It may be beneficial to consider a gradient background, perhaps something just off-white, to enhance contrast while making it easier on the eyes.
+- I suggest reducing the size of the navigation bar by decreasing the padding around the links.
+- I encountered an issue with video playback. Error: 'No video with supported format and MIME type found'. It may be because the video is encoded in H.265, which is not supported by all modern browsers.
+- I appreciate the inclusion of the 'Return to top' links. They are very effective, and I'm going to steal them!
+- The marquee is very cool and funny!
+
+_________________________________________
+
+My Comments and the things I changed: 
+
+Changes:
+
+- Changed the video encoding setting to be H.264 and not the H.265
+	- According to Google the H.264 should be supported by most browsers 
+
+- Changed the background color from white to a grey color to make it easier on the eyes
+	- I agree with this even though I think the white is more asthetically pleasing. I didn't go with the gradient because I felt it would be to distracting from the text.
+
+My comments: 
+
+- I feel the nav bar is a good size. It is a little big when on mobile but I feel it helps make the buttons eaiser to press. Especially for one handed use. 
+
+- I feel my text size is very readable. At least on my monitors. This is tested on a 15 in laptop and then 2 1440p monitors and a iPhone 13 Pro Max
