@@ -1,5 +1,5 @@
-
-/*Space here to make a custom variable*/ /**/
+/*Space here to make a custom variable*/
+/**/
 
 /*
 =====================================================
@@ -8,7 +8,7 @@
 */
 /*============  End of Template  ============*/
 
-/*Date Last Modified: 2/25/2025*/
+/*Date Last Modified: 3/9/2025*/
 /*Author: Aj Sison*/
 
 /*
@@ -49,11 +49,20 @@ li {
     margin-top: 0;
 }
 
+img {
+    width: 60%;
+    height: auto;
+    max-width: 348.212px;
+    max-height: 753.375px;
+    border: 10px ridge #000000;
+}
+
 footer {
     padding: 40px 20px 40px 20px;
     background-color: #000000;
     color: #ffffff;
 }
+
 /*============  End of Global Changes  ============*/
 /*
 =====================================================
@@ -66,8 +75,8 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "MORF" 15,
-      "SHLN" 50;
+        "MORF" 15,
+        "SHLN" 50;
 }
 
 .kumar_text {
@@ -81,6 +90,7 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+
 /*============  End of Google Fonts  ============*/
 /*
 =====================================================
@@ -110,7 +120,7 @@ footer {
     font-weight: bold;
     padding: 5% 0;
 }
-  
+
 #nav_menu ul li a.current {
     background-color: #ffd900;
 }
@@ -133,6 +143,7 @@ p#logo_text {
     opacity: 0;
     font-size: 1em;
 }
+
 /*============  End of Navigation Bar Changes  ============*/
 /*
 =====================================================
@@ -154,7 +165,7 @@ div#home_page_video_box {
 }
 
 video#home_page_video {
-    width: 257px; 
+    width: 257px;
     height: 555px;
     display: block;
     margin: auto;
@@ -187,7 +198,7 @@ a#download_button {
     border: 6px solid black;
     border-radius: 20px;
     font-size: 3em;
-    padding:20px;
+    padding: 20px;
     color: #000000;
     text-decoration: none;
 }
@@ -197,6 +208,7 @@ a#download_button:hover {
     color: #ffd700;
     border: 6px solid #ffd700;
 }
+
 /*============  End of Home Page Video Flex Box Changes  ============*/
 /*
 =====================================================
@@ -215,16 +227,6 @@ div#game_overview_container {
     padding: 2em 1em;
     display: flex;
     flex-direction: row;
-}
-
-div#game_overview_gameplay img {
-    display: block;
-    margin: auto;
-    width: 60%;
-    height: auto;
-    max-width: 348.212px;
-    max-height: 753.375px;
-    border: 10px ridge #000000;
 }
 
 #gameplay_pic_text_box {
@@ -267,6 +269,7 @@ p#home_note {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 /*============  End of Gameoverview Flex Box Changes  ============*/
 /*
 =====================================================
@@ -281,6 +284,7 @@ section.bottom_links {
 a#netmarble_site {
     color: #ffffff;
 }
+
 /*============  End of Div Changes for Bottom Links  ============*/
 /*
 =====================================================
@@ -299,16 +303,20 @@ a#netmarble_site {
     #nav_menu ul.nav_links {
         flex-direction: column;
     }
+
     section#home_page_video_container {
         flex-direction: column;
     }
+
     div#game_overview_container {
         flex-direction: column;
-    }    
+    }
+
     video#home_page_video {
-        width: 342.4px; 
+        width: 342.4px;
         height: 740.8px;
     }
+
     #nav_menu ul li {
         font-size: 2em;
     }
@@ -319,20 +327,43 @@ a#netmarble_site {
     h1#overview_text {
         font-size: 2em;
     }
+
+    h2.main_section_heading_text {
+        font-size: 1em;
+    }
+
+    .main_section_heading_text::first-letter {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.85em;
+    }
+
+    p.list_heading::first-letter {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: 0.85em;
+    }
 }
 
 /*Changes hompage video size, and the size of the text next to it*/
 @media only screen and (max-width: 500px) {
     video#home_page_video {
-        width: 278.2px; 
+        width: 278.2px;
         height: 601.9px;
     }
+
     div#home_page_video_text_box h1 {
         font-size: 3em;
     }
+
     p#summon_text {
         font-size: 2em;
     }
+
     a#download_button {
         font-size: 2em;
     }
@@ -344,26 +375,14 @@ a#netmarble_site {
         font-size: 1.8em;
         margin-top: 1em;
     }
+
     div#game_overview_container {
         padding-top: 0;
     }
+
     div#game_overview_gameplay img {
         margin-bottom: 1em;
     }
-    h2.main_section_heading_text {
-        font-size: 1em;
-    }
-    .main_section_heading_text::first-letter {
-        font-size: 1em;
-    }  
-    p {
-        font-size: 0.85em;
-    }
-    p.list_heading::first-letter {
-        font-size: 1em;
-    }
-    li {
-        font-size: 0.85em;
-    }
 }
+
 /*============  End of Media Queries  ============*/

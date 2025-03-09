@@ -1,0 +1,54 @@
+/*Space here to make a custom variable*/
+/**/
+
+/*
+=====================================================
+|                   Template                        |
+=====================================================
+*/
+/*============  End of Template  ============*/
+
+/*Date Last Modified: 3/9/2025*/
+/*Author: Aj Sison*/
+
+/*
+=====================================================
+|                   Header Changes                  |
+=====================================================
+*/
+#heading_text_box {
+    background: url(../images/check_shop_banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 350%;
+    background-position: 0 -300px;
+    text-align: center;
+    padding: 2em 0;
+    border-bottom: 10px ridge #000000;
+}
+/*============  End of Header Changes  ============*/
+/*
+=====================================================
+|                   Checklist Flex Boxes Changes    |
+=====================================================
+*/
+div#checklist_box_1, div#checklist_box_2 {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+    justify-content: space-evenly;
+    text-align: center;
+}
+/*============  End of Checklist Flex Boxes Changes  ============*/
+/*
+=====================================================
+|                   Checklist Flex Boxes Changes    |
+=====================================================
+*/
+div#shop_box_1, div#shop_box_2 {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+    justify-content: space-evenly;
+    text-align: center;
+}
+/*============  End of Checklist Flex Boxes Changes  ============*/

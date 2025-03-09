@@ -1,5 +1,5 @@
-
-/*Space here to make a custom variable*/ /**/
+/*Space here to make a custom variable*/
+/**/
 
 /*
 =====================================================
@@ -8,9 +8,52 @@
 */
 /*============  End of Template  ============*/
 
-/*Date Last Modified: 2/24/2025*/
+/*Date Last Modified: 3/9/2025*/
 /*Author: Aj Sison*/
 
+/*
+=====================================================
+|                   Header Changes                  |
+=====================================================
+*/
+#heading_text_box {
+    background: url(../images/hero_pet_banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 350%;
+    background-position: 0 -400px;
+    text-align: center;
+    padding: 2em 0;
+    border-bottom: 10px ridge #000000;
+}
+/*============  End of Header Changes  ============*/
+/*
+=====================================================
+|                 Summon Flex Container                |
+=====================================================
+*/
+div#hero_summon_pics_box {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+    justify-content: space-evenly;
+}
+
+div#hero_summon_pic_1_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+div#hero_summon_pic_2_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+div#hero_summon_pic_3_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+/*============  End of Summon Flex Container  ============*/
 /*
 =====================================================
 |          Hero Rarity Image Grid Changes           |
@@ -21,9 +64,9 @@ section#rarity_grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 50px;
-    grid-template-areas: 
-    "hig leg uni epi"
-    "rar nor ext emp";
+    grid-template-areas:
+        "hig leg uni epi"
+        "rar nor ext emp";
     padding: 2em;
 }
 
@@ -63,7 +106,29 @@ img.rarity_grid_img_size {
 #emp {
     grid-area: emp;
 }
+
 /*============  End of Hero Rarity Image Grid Changes  ============*/
+/*
+=====================================================
+|                 Codex Flex Container                |
+=====================================================
+*/
+section#codex_box {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 1em;
+}
+
+div#codex_text {
+    flex-basis: 60%;
+}
+
+div#codex_pic {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+/*============  End of Codex Flex Container Changes  ============*/
 /*
 =====================================================
 |              Hero Stat List Changes               |
@@ -72,57 +137,139 @@ img.rarity_grid_img_size {
 ul.hero_stat_list {
     margin: 0;
 }
+
 /*============  End of Hero Stat List Changes  ============*/
+/*
+=====================================================
+|                 Codex Flex Container                |
+=====================================================
+*/
+section#hero_stat_box {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 1em;
+}
+
+div#hero_stat_text {
+    flex-basis: 60%;
+}
+
+div#hero_stat_pic {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+/*============  End of Codex Flex Container Changes  ============*/
+/*
+=====================================================
+|                 Pets Flex Container                |
+=====================================================
+*/
+div#pet_pics_box {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+    justify-content: space-evenly;
+}
+
+div#pet_pic_1_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+div#pet_pic_2_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+div#pet_pic_3_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+/*============  End of Pets Flex Container Changes  ============*/
+/*
+=====================================================
+|                 Other Stats Flex Container                |
+=====================================================
+*/
+div#other_stat_box_1,
+div#other_stat_box_2,
+div#other_stat_box_3,
+div#other_stat_box_4 {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/*============  End of Other Stats Flex Flex Container Changes  ============*/
 /*
 =====================================================
 |                  Media Queries                    |
 =====================================================
 */
 /*Changes grid settings*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
     section#rarity_grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-gap: 25px;
-        grid-template-areas: 
-        "hig leg uni"
-        "epi rar nor"
-        "ext ext ext";
+        grid-template-areas:
+            "hig leg uni"
+            "epi rar nor"
+            "ext ext ext";
     }
+
     img.rarity_grid_img_size {
         max-height: 80%;
         width: auto;
     }
 }
 
-/*Changes grid settings*/
-@media only screen and (max-width: 765px) {
-    section#rarity_grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-gap: 15px;
-        grid-template-areas: 
-        "hig leg"
-        "uni epi"
-        "rar nor"
-        "ext ext";
-    }
-}
+/*Changes Flex Boxes*/
+@media only screen and (max-width: 1000px) {
 
-/*Changes grid settings*/
-@media only screen and (max-width: 500px) {
-    section#rarity_grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
-        "hig"
-        "leg"
-        "uni" 
-        "epi"
-        "rar" 
-        "nor"
-        "ext";
+    div#hero_summon_pics_box,
+    section#codex_box,
+    section#hero_stat_box,
+    div#pet_pics_box {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 }
+
+/*Changes grid settings*/
+@media only screen and (max-width: 960px) {
+    section#rarity_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 15px;
+        grid-template-areas:
+            "hig leg"
+            "uni epi"
+            "rar nor"
+            "ext ext";
+    }
+}
+
+/*Changes grid settings*/
+@media only screen and (max-width: 600px) {
+    section#rarity_grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "hig"
+            "leg"
+            "uni"
+            "epi"
+            "rar"
+            "nor"
+            "ext";
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /*============  End of Media Queries  ============*/

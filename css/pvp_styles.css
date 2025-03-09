@@ -8,7 +8,7 @@
 */
 /*============  End of Template  ============*/
 
-/*Date Last Modified: 2/24/2025*/
+/*Date Last Modified: 3/9/2025*/
 /*Author: Aj Sison*/
 
 /*
@@ -19,6 +19,7 @@
 section.extra_margin {
     margin: 0 2%;
 }
+
 /*============  End of Section Margin  ============*/
 /*
 =====================================================
@@ -26,7 +27,7 @@ section.extra_margin {
 =====================================================
 */
 #heading_text_box {
-    background: url(../images/gemini_background_2.png);
+    background: url(../images/pvp_pve_banner.png);
     background-repeat: no-repeat;
     background-size: 100% 300%;
     background-position: center;
@@ -41,6 +42,7 @@ section.extra_margin {
     color: #ffffff;
     margin: 0;
 }
+
 /*============  End of Header Changes  ============*/
 /*
 =====================================================
@@ -48,42 +50,121 @@ section.extra_margin {
 =====================================================
 */
 div#pvp_pics_box {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    padding: 2em 1em;
+    padding: 1em 1em;
     justify-content: space-evenly;
 }
 
-img#pvp_pic_1 {
-    max-width: 348.212px;
-    max-height: 753.375px;
-    border: 10px ridge #000000;
+div#pvp_pic_1_box {
     flex-basis: 50%;
+    text-align: center;
 }
 
-img#pvp_pic_2 {
-    max-width: 348.212px;
-    max-height: 753.375px;
-    border: 10px ridge #000000;
+div#pvp_pic_2_box {
     flex-basis: 50%;
+    text-align: center;
 }
+
+figcaption.pic_text {
+    margin-bottom: 2em;
+}
+
 /*============  End of PVP Flex Container  ============*/
+/*
+=====================================================
+|                 PVE Flex Container                |
+=====================================================
+*/
+div#pve_pics_box {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+    justify-content: space-evenly;
+}
+
+div#pve_pic_1_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+div#pve_pic_2_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+div#pve_pic_3_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+/*============  End of PVE Flex Container  ============*/
+/*
+=====================================================
+|                 Event Flex Container                |
+=====================================================
+*/
+div#event_pics_box {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+    justify-content: space-evenly;
+}
+
+div#event_pic_1_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+img#event_pic_1 {
+    border: 10px ridge #000000;
+}
+
+div#event_pic_2_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+img#event_pic_2 {
+    border: 10px ridge #000000;
+}
+
+div#event_pic_3_box {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+img#event_pic_3 {
+    border: 10px ridge #000000;
+}
+
+/*============  End of Event Flex Container  ============*/
 /*
 =====================================================
 |                  Media Queries                    |
 =====================================================
 */
-/*Changes Flex Box for PVP Aspects*/
+/*Changes Flex Boxes*/
 @media only screen and (max-width: 1000px) {
     div#pvp_pics_box {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    img#pvp_pic_1 {
-        margin-bottom: 2em;
+
+    div#pve_pics_box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#event_pics_box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
+
 /*Changes heading text size*/
 @media only screen and (max-width: 635px) {
     #heading_text_box h1 {

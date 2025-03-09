@@ -45,138 +45,254 @@
         </section>
     </header>
     <main>
-        <!--This the overview text-->
-        <h1 id="overview_text" class="kumar_text">Heroes and Pets Overview</h1>
-        <p>To gain more heroes you have to <strong>summon</strong> them. Heroes are summoned using either
-            <strong>summoning tickets</strong> or <strong>gems</strong>. Summoned heroes come in different
-            <strong>rarities</strong>! The higher the rarity the stronger the hero!
-        </p>
-        <section> <!--This Section is about the Hero Summons-->
-            <!--Make into a flex box-->
-            <!--Add image of hero summoning screen later-->
-            <h2 class="main_section_heading_text">About Hero Stats:</h2>
-            <p class="list_heading">Hero rarities listed from <strong>strongest</strong> to <em>weakest</em>
-                &cudarrr;
-            </p>
-            <ul class="ul_section_list">
-                <li>High Lord</li>
-                <li>Legendary</li>
-                <li>Unique</li>
-                <li>Epic</li>
-                <li>Rare</li>
-                <li>Normal</li>
-                <li>Extra</li>
-            </ul>
-        </section>
-        <section id="rarity_grid"> <!--This section is for the grid of images-->
-            <div id="hig">
-                <img src="../images/high_lord.png" alt="Image of a High Lord card" class="rarity_grid_img_size">
-            </div>
-            <div id="leg">
-                <img src="../images/legendary.png" alt="Image of a Legendary card" class="rarity_grid_img_size">
-            </div>
-            <div id="uni">
-                <img src="../images/unique.png" alt="Image of a Unique card" class="rarity_grid_img_size">
-            </div>
-            <div id="epi">
-                <img src="../images/epic.png" alt="Image of a Epic card" class="rarity_grid_img_size">
-            </div>
-            <div id="rar">
-                <img src="../images/rare.png" alt="Image of a Rare card" class="rarity_grid_img_size">
-            </div>
-            <div id="nor">
-                <img src="../images/normal.png" alt="Image of a Normal card" class="rarity_grid_img_size">
-            </div>
-            <div id="ext">
-                <img src="../images/extra.png" alt="Image of a Extra card" class="rarity_grid_img_size">
-            </div>
-        </section>
-        <section> <!--Make this into a felx box-->
-            <p>The heroes are split into collections that are part of a codex. In the codex, as hero collections are
-                completed stat increases are gained. Stat increases gained from the codex are applied universally.
-                This
-                means that it is applied to a player's team as a whole regardless of what heroes are in the team.
-            </p>
-            <marquee>
-                <p class="important_text"><strong>!!!IMPORTANT!!!</strong></p>
-            </marquee>
-            <p>Yes, players can spend <em>real money</em> on the game in the shop to speed up their leveling
-                process.
-                <strong>However</strong>, the game is <strong>very generous</strong> in that if players are actively
-                playing and participating in events, spending real money is not needed. The game gives out a lot of
-                its
-                in-game currencies as players progress through the game. <strong>JUST KEEP PLAYING!</strong>
-            </p>
-            <!--Add image of hero codex screen-->
-        </section>
-        <section> <!--This Section is about strengthening your heroes and make a flex box-->
-            <!--Add image of hero leveling screen-->
-            <h2 class="main_section_heading_text">About Hero Stats:</h2>
-            <p>There are many other ways to increase the <strong>strength</strong> of the heroes.</p>
-            <p class="list_heading">Here is a list of ways to increase a hero's strength and the resources needed
-                &cudarrr;</p>
-            <ul class="ul_section_list">
-                <li>Hero's Level (1-50-X)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Uses Hero EXPs</small></li>
+        <section class="extra_margin">
+            <!--This the overview text-->
+            <h1 id="overview_text" class="kumar_text">Heroes and Pets Overview</h1>
+            <section> <!--This Section is about the Hero Summons-->
+                <h2 class="main_section_heading_text">About Hero Summons:</h2>
+                <p>To gain more heroes you have to <strong>summon</strong> them. Heroes are summoned using either
+                    <strong>summoning tickets</strong> or <strong>gems</strong>. Summoned heroes come in different
+                    <strong>rarities</strong>! The higher the rarity the stronger the hero!
+                </p>
+                <div id="hero_summon_pics_box"> <!--Flex container-->
+                    <div id="hero_summon_pic_1_box">
+                        <img src="../images/hero_summon_1.png" alt="Screenshot of the Normal Hero Summon Page"
+                            id="hero_summon_pic_1">
+                        <figcaption class="pic_text">Normal Hero Summons</figcaption>
+                    </div>
+                    <div id="hero_summon_pic_2_box">
+                        <img src="../images/hero_summon_2.png" alt="Screenshot of the Premium Hero Summon Page"
+                            id="hero_summon_pic_2">
+                        <figcaption class="pic_text">Premium Hero Summons</figcaption>
+                    </div>
+                    <div id="hero_summon_pic_3_box">
+                        <img src="../images/hero_summon_3.png" alt="Screenshot of the Event Hero Summon Page"
+                            id="hero_summon_pic_3">
+                        <figcaption class="pic_text">Event Hero Summons</figcaption>
+                    </div>
+                </div>
+                <p class="list_heading">Hero rarities listed from <strong>strongest</strong> to <em>weakest</em>
+                    &cudarrr;
+                </p>
+                <ul class="ul_section_list">
+                    <li>High Lord</li>
+                    <ul>
+                        <li>Example image below: <a href="#hig">High Lord Freyja</a></li>
+                    </ul>
+                    <li>Legendary</li>
+                    <ul>
+                        <li>Example image below: <a href="#leg">Mist</a></li>
+                    </ul>
+                    <li>Unique</li>
+                    <ul>
+                        <li>Example image below: <a href="#uni">Tsing Tao</a></li>
+                    </ul>
+                    <li>Epic</li>
+                    <ul>
+                        <li>Example image below: <a href="#epi">Rook</a></li>
+                    </ul>
+                    <li>Rare</li>
+                    <ul>
+                        <li>Example image below: <a href="#rar">Baron</a></li>
+                    </ul>
+                    <li>Normal</li>
+                    <ul>
+                        <li>Example image below: <a href="#nor">Ahri</a></li>
+                    </ul>
+                    <li>Extra</li>
+                    <ul>
+                        <li>Example image below: <a href="ext">Pirate Krug</a></li>
+                    </ul>
                 </ul>
-                <li>Hero's Breakthrough (For heroes level 50 and up)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Uses Hero Strengthening Stones</small></li>
-                </ul>
-                <li>Hero's Advancement (The Stars)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Requires multiples of the same hero</small></li>
-                </ul>
-                <li>Hero's Stat Bonuses (+X)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Uses Elixirs</small></li>
-                </ul>
-                <li>Hero's Potential (Rarity/Stat Based)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Uses Dice</small></li>
-                </ul>
-                <li>Accessories (Level 1-7)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Uses Rainbow Ore</small></li>
-                </ul>
-                <li>Equipment (Stat increases)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Requires specific hero weapon</small></li>
-                </ul>
-                <li>Equipment Level (1-10-X)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Uses Refining Stones</small></li>
-                </ul>
-                <li>Equipment Breakthrough (For equipment level 10 and up)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Requires multiples of the same
-                            equipment</small></li>
-                </ul>
-                <li>Hero's Costume (Stat increases)</li>
-                <ul class="hero_stat_list">
-                    <li><small>Costume Tickets</small></li>
-                </ul>
-            </ul>
-        </section>
-        <section> <!--This Section is about pets and make a flex box-->
-            <h2 class="main_section_heading_text">About Pets:</h2>
-            <p>The game also features <strong>pets</strong>. Pets are summoned and leveled up in a similar way to the
-                heroes are. Additionally, pets have similar rarities except for <em>"High Lord"</em>. The main purpose
-                of pets is to increase stats. The stat increases get better as the pet's level increases. Also, just
-                like with the codex, the stat increases from pets are applied universally regardless of which pet is
-                being used.</p>
-            <!--Add image of pet screen later-->
-        </section>
-        <section class="bottom_links"> <!--For the return to top link-->
-            <p><a href="#top">Return to Top</a></p>
-            <p><a href="../index.html">Home Page</a></p>
+            </section>
+            <section id="rarity_grid"> <!--This section is for the grid of images-->
+                <div id="hig">
+                    <img src="../images/high_lord.png" alt="Image of a High Lord card" class="rarity_grid_img_size">
+                </div>
+                <div id="leg">
+                    <img src="../images/legendary.png" alt="Image of a Legendary card" class="rarity_grid_img_size">
+                </div>
+                <div id="uni">
+                    <img src="../images/unique.png" alt="Image of a Unique card" class="rarity_grid_img_size">
+                </div>
+                <div id="epi">
+                    <img src="../images/epic.png" alt="Image of a Epic card" class="rarity_grid_img_size">
+                </div>
+                <div id="rar">
+                    <img src="../images/rare.png" alt="Image of a Rare card" class="rarity_grid_img_size">
+                </div>
+                <div id="nor">
+                    <img src="../images/normal.png" alt="Image of a Normal card" class="rarity_grid_img_size">
+                </div>
+                <div id="ext">
+                    <img src="../images/extra.png" alt="Image of a Extra card" class="rarity_grid_img_size">
+                </div>
+            </section> <!--This section is about the Codex-->
+            <section id="codex_box"> <!--Flex container-->
+                <div id="codex_text">
+                    <h2 class="main_section_heading_text">About the Codex:</h2>
+                    <p>The heroes are split into collections that are part of a codex. In the codex, as hero collections
+                        are
+                        completed stat increases are gained. Stat increases gained from the codex are applied
+                        universally.
+                        This
+                        means that it is applied to a player's team as a whole regardless of what heroes are in the
+                        team.
+                    </p>
+                    <marquee>
+                        <p class="important_text"><strong>!!!IMPORTANT!!!</strong></p>
+                    </marquee>
+                    <p>Yes, players can spend <em>real money</em> on the game in the shop to summon more heroes and
+                        speed up their leveling
+                        process.
+                        <strong>However</strong>, the game is <strong>very generous</strong> in that if players are
+                        actively
+                        playing and participating in events, spending real money is not needed. The game gives out a lot
+                        of
+                        its
+                        in-game currencies as players progress through the game. <strong>JUST KEEP PLAYING!</strong>
+                    </p>
+                </div>
+                <div id="codex_pic">
+                    <img src="../images/codex_screen.png" alt="Screenshot of the Codex Page">
+                    <figcaption class="pic_text">Codex Screen</figcaption>
+                </div>
+            </section>
+            <section id="hero_stat_box"> <!--This Section is about strengthening your heroes and is a Flex container-->
+                <div id="hero_stat_pic">
+                    <img src="../images/hero_page_2.png" alt="Screenshot of the alternate Hero Page">
+                    <figcaption class="pic_text">Hero Stats Screen</figcaption>
+                </div>
+                <div id="hero_stat_text">
+                    <h2 class="main_section_heading_text">About Hero Stats:</h2>
+                    <p>There are many other ways to increase the <strong>strength</strong> of the heroes.</p>
+                    <p class="list_heading">Here is a list of ways to increase a hero's strength and the resources
+                        needed
+                        &cudarrr;</p>
+                    <ul class="ul_section_list">
+                        <li>Hero's Level (1-50-X)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Uses Hero EXPs</small></li>
+                        </ul>
+                        <li>Hero's Breakthrough (For heroes level 50 and up)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Uses Hero Strengthening Stones</small></li>
+                        </ul>
+                        <li>Hero's Advancement (The Stars)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Requires multiples of the same hero</small></li>
+                        </ul>
+                        <li>Hero's Stat Bonuses (+X)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Uses Elixirs</small></li>
+                        </ul>
+                        <li>Hero's Potential (Rarity/Stat Based)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Uses Dice</small></li>
+                        </ul>
+                        <li>Accessories (Level 1-7)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Uses Rainbow Ore</small></li>
+                        </ul>
+                        <li>Equipment (Stat increases)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Requires specific hero weapon</small></li>
+                        </ul>
+                        <li>Equipment Level (1-10-X)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Uses Refining Stones</small></li>
+                        </ul>
+                        <li>Equipment Breakthrough (For equipment level 10 and up)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Requires multiples of the same
+                                    equipment</small></li>
+                        </ul>
+                        <li>Hero's Costume (Stat increases)</li>
+                        <ul class="hero_stat_list">
+                            <li><small>Costume Tickets</small></li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <section> <!--This Section is about pets-->
+                <h2 class="main_section_heading_text">About Pets:</h2>
+                <p>The game also features <strong>pets</strong>. Pets are summoned and leveled up in a similar way to
+                    the
+                    heroes are. Additionally, pets have similar rarities except for <em>"High Lord"</em>. The main
+                    purpose
+                    of pets is to increase stats. The stat increases get better as the pet's level increases. Also, just
+                    like with the codex, the stat increases from pets are applied universally regardless of which pet is
+                    being used.</p>
+                <div id="pet_pics_box"> <!--Flex container-->
+                    <div id="pet_pic_1_box">
+                        <img src="../images/pet_page.png" alt="Screenshot of the Pet Page">
+                        <figcaption class="pic_text">Pet Page</figcaption>
+                    </div>
+                    <div id="pet_pic_2_box">
+                        <img src="../images/pet_summon_1.png" alt="Screenshot of the Pet Summon Page">
+                        <figcaption class="pic_text">Pet Summons</figcaption>
+                    </div>
+                    <div id="pet_pic_3_box">
+                        <img src="../images/pet_summon_2.png" alt="Screenshot of the Select Pet Summon Page">
+                        <figcaption class="pic_text">Select Pet Summon</figcaption>
+                    </div>
+                </div>
+            </section>
+            <sections> <!--This section is about other ways to gain resources to raise stats-->
+                <h2 class="main_section_heading_text">The other ways to gain resources to raise stats:</h2>
+                <div id="other_stat_box_1"> <!--Flex container-->
+                    <div id="hard_boss_box">
+                        <img src="../images/hard_boss.png" alt="Screenshot of the Hard Boss Battle Page">
+                        <figcaption class="pic_text">Hard Boss Battle</figcaption>
+                    </div>
+                    <div id="insignia_summon_box">
+                        <img src="../images/insignia_summon.png" alt="Screenshot of the Insignia Summon Page">
+                        <figcaption class="pic_text">Insignia Summon</figcaption>
+                    </div>
+                </div>
+                <div id="other_stat_box_2"> <!--Flex container-->
+                    <div id="influence">
+                        <img src="../images/influence.png" alt="Screenshot of the Influence Page">
+                        <figcaption class="pic_text">Influence Page</figcaption>
+                    </div>
+                    <div id="traits_box">
+                        <img src="../images/traits.png" alt="Screenshot of the Traits Page">
+                        <figcaption class="pic_text">Traits Page</figcaption>
+                    </div>
+                </div>
+                <div id="other_stat_box_3"> <!--Flex container-->
+                    <div id="relics">
+                        <img src="../images/relics.png" alt="Screenshot of the Relics Page">
+                        <figcaption class="pic_text">Relics Page</figcaption>
+                    </div>
+                    <div id="essence_box">
+                        <img src="../images/essence.png" alt="Screenshot of the Essence Page">
+                        <figcaption class="pic_text">Essence Page</figcaption>
+                    </div>
+                </div>
+                <div id="other_stat_box_4"> <!--Flex container-->
+                    <div id="blessing">
+                        <img src="../images/blessing.png" alt="Screenshot of the Blessing Page">
+                        <figcaption class="pic_text">Blessing Page</figcaption>
+                    </div>
+                    <div id="shackles_box">
+                        <img src="../images/shackles.png" alt="Screenshot of the Shackles Page">
+                        <figcaption class="pic_text">Shackles of Destiny Page</figcaption>
+                    </div>
+                </div>
+            </sections>
+            <section class="bottom_links"> <!--For the return to top link-->
+                <p><a href="#top">Return to Top</a></p>
+                <p><a href="../index.html">Home Page</a></p>
+            </section>
         </section>
     </main>
     <footer>
-        <p>&copy; <em>Aj Sison</em> 2/24/2025</p>
-        <p>I am not the owner of this game. This is for educational purposes. All images and videos of the game belong to &copy; Netmarble Corp. & Netmarble Nexus Inc. All Rights Reserved.</p>
+        <p>&copy; <em>Aj Sison</em> 3/9/2025</p>
+        <p>I am not the owner of this game. This is for educational purposes. All images and videos of the game belong
+            to &copy; Netmarble Corp. & Netmarble Nexus Inc. All Rights Reserved.</p>
         <p><a href="https://netmarble.com/en" id="netmarble_site">Netmarble's Website</a></p>
+        <p>Banner images were made using Google's Generative AI Gemini.</p>
         <small>
             <marquee>~(-.-)~</marquee>
         </small>

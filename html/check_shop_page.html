@@ -8,6 +8,7 @@
         content="Seven Knights Idle Adventure is a idle RPG game that is free to play and offers in app purchases to accelerate progress! Rise up the stages! Play it on PC, Android, and IOS!">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/pvp_styles.css">
+    <link rel="stylesheet" href="../css/check_styles.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +26,16 @@
             <li><a href="../index.html" id="logo_spot">
                     <p id="logo_text">text</p>
                 </a></li>
-                <li class="honk_text"><a href="../index.html"><i class="fa-solid fa-house fa-sm" style="color: #818181;"></i> Home</a></li>
-                <li class="honk_text"><a href="pvp_pve_page.html"><i class="fa-solid fa-khanda fa-sm" style="color: #818181;"></i> PVP | PVE</a></li>
-                <li class="honk_text"><a href="heroes_pets_page.html"><i class="fa-solid fa-person fa-sm" style="color: #818181;"></i> Heroes | <i class="fa-solid fa-dog fa-sm" style="color: #818181;"></i> Pets</a></li>
-                <li class="honk_text"><a href="check_shop_page.html" class="current"><i class="fa-solid fa-list-check fa-sm" style="color: #818181;"></i> Checklist | <i class="fa-solid fa-shop fa-sm" style="color: #818181;"></i> Shop</a></li>
+            <li class="honk_text"><a href="../index.html"><i class="fa-solid fa-house fa-sm"
+                        style="color: #818181;"></i> Home</a></li>
+            <li class="honk_text"><a href="pvp_pve_page.html"><i class="fa-solid fa-khanda fa-sm"
+                        style="color: #818181;"></i> PVP | PVE</a></li>
+            <li class="honk_text"><a href="heroes_pets_page.html"><i class="fa-solid fa-person fa-sm"
+                        style="color: #818181;"></i> Heroes | <i class="fa-solid fa-dog fa-sm"
+                        style="color: #818181;"></i> Pets</a></li>
+            <li class="honk_text"><a href="check_shop_page.html" class="current"><i class="fa-solid fa-list-check fa-sm"
+                        style="color: #818181;"></i> Checklist | <i class="fa-solid fa-shop fa-sm"
+                        style="color: #818181;"></i> Shop</a></li>
         </ul>
     </nav>
     <header> <!--Contains header text-->
@@ -38,43 +45,127 @@
         </section>
     </header>
     <main>
-        <!--This the overview text-->
-        <h1 id="overview_text" class="kumar_text">Checklist and Shop Overview</h1> 
-        <section> <!--This Section is about the checklists page make this a flex box-->
-            <h2 class="main_section_heading_text">About the Checklist Page:</h2>
-            <p>The Checklist page is another way of getting more <strong>resources</strong> in the game.</p>
-            <p class="list_heading">The Checklist page contains:</p>
-            <ul class="ul_section_list">
-                <li>The Secret Basement</li>
-                <li>The Missions</li>
-                <li>The Conquest Requests</li>
-                <li>The Mine</li>
-                <li>The Passes</li>
-            </ul>
-            <!--Add image of Checklist screen-->
-        </section>
-        <section> <!--This Section is about the shop page make this a flex box-->
-            <h2 class="main_section_heading_text">About the Shop Page:</h2>
-            <p>The Shop page is another way of getting more <strong>resources</strong> in the game.</p>
-            <p class="list_heading">The Shop page contains:</p>
-            <ul class="ul_section_list">
-                <li>The Summons</li>
-                <!--Make a note about High Lords using Shakles of Destiny to be obtained-->
-                <li>The Shop</li>
-                <li>Daily Shop</li>
-                <li>Monthly Packs</li>
-            </ul>
-            <!--Add image of Shop screen-->
-        </section>
-        <section class="bottom_links"> <!--For the return to top link-->
-            <p><a href="#top">Return to Top</a></p>
-            <p><a href="../index.html">Home Page</a></p>
+        <section class="extra_margin">
+            <!--This the overview text-->
+            <h1 id="overview_text" class="kumar_text">Checklist and Shop Overview</h1>
+            <section> <!--This Section is about the checklists page-->
+                <h2 class="main_section_heading_text">About the Checklist Page:</h2>
+                <p>The Checklist page is another way of getting more <strong>resources</strong> in the game.</p>
+                <div id="checklist_box_1"> <!--Flex container-->
+                    <div id="secret_basement_box">
+                        <img src="../images/secret_basement.png" alt="Screenshot of the Secret Basement Page">
+                        <figcaption class="pic_text">Secret Basement Page</figcaption>
+                    </div>
+                    <div id="missions_tab_box">
+                        <img src="../images/missions.png" alt="Screenshot of the Missions Page">
+                        <figcaption class="pic_text">Missions Page</figcaption>
+                    </div>
+                </div>
+                <div id="checklist_box_2"> <!--Flex container-->
+                    <div id="conquest_tab_box">
+                        <img src="../images/conquest.png" alt="Screenshot of the Conquest Request Page">
+                        <figcaption class="pic_text">Conquest Request Page</figcaption>
+                    </div>
+                    <div id="mines_box">
+                        <img src="../images/mines.png" alt="Screenshot of the Mines Page">
+                        <figcaption class="pic_text">Mines Page</figcaption>
+                    </div>
+                </div>
+                <p class="list_heading">The Checklist page contains:</p>
+                <ul class="ul_section_list">
+                    <li>The Secret Basement Tab</li>
+                    <ul>
+                        <li>Daily Dishes</li>
+                        <ul>
+                            <li>Gives players food that grants stat bonuses</li>
+                        </ul>
+                        <li>Pet Ranch</li>
+                        <ul>
+                            <li>Gives players Star Shards to raise Blessing stats</li>
+                        </ul>
+                        <li>Elke's Caildron</li>
+                        <ul>
+                            <li>Allows players to craft certain resources and foods</li>
+                        </ul>
+                        <li>Library</li>
+                        <ul>
+                            <li>Is an archive of the places players have been and of the story conversations between
+                                characters</li>
+                        </ul>
+                    </ul>
+                    <li>The Missions Tab</li>
+                    <ul>
+                        <li>Contains Daily, Weekly, and Repeated Missions to complete</li>
+                    </ul>
+                    <li>The Conquest Requests Tab</li>
+                    <ul>
+                        <li>Contains a mini game to gain Dice used to raise hero stats</li>
+                    </ul>
+                    <li>The Mine</li>
+                    <ul>
+                        <li>Gives players the chance of gaining a lot of Rainbow Ores used to level up hero accessories
+                        </li>
+                    </ul>
+                </ul>
+            </section>
+            <section> <!--This Section is about the shop page-->
+                <h2 class="main_section_heading_text">About the Shop Page:</h2>
+                <p>The Shop page is another way of getting more <strong>resources</strong> in the game.</p>
+                <div id="shop_box_1"> <!--Flex container-->
+                    <div id="summon_tab_box">
+                        <img src="../images/hero_summon_1.png" alt="Screenshot of the Hero Summon Page">
+                        <figcaption class="pic_text">Hero Summon Page</figcaption>
+                    </div>
+                    <div id="shop_tab_tab_box">
+                        <img src="../images/shop_page.png" alt="Screenshot of the Shop Page">
+                        <figcaption class="pic_text">Shop Page</figcaption>
+                    </div>
+                </div>
+                <div id="shop_box_2"> <!--Flex container-->
+                    <div id="daily_shop_tab_box">
+                        <img src="../images/daily_shop.png" alt="Screenshot of the Daily Shop Page">
+                        <figcaption class="pic_text">Daily Shop Page</figcaption>
+                    </div>
+                    <div id="monthly_packs_box">
+                        <img src="../images/monthly_sub_page.png" alt="Screenshot of the Monthly Packs Page">
+                        <figcaption class="pic_text">Monthly Packs Page</figcaption>
+                    </div>
+                </div>
+                <p class="list_heading">The Shop page contains:</p>
+                <ul class="ul_section_list">
+                    <li>The Summons Tab</li>
+                    <ul>
+                        <li>Here players can summon heroes by using the appropriate tickets or gems as currency.However,
+                            High Lords cannot be summoned here. They are obtained through the Shakles of Destiny</li>
+                    </ul>
+                    <li>The Shop Tab</li>
+                    <ul>
+                        <li>Here players can spend real money or other currencies like gems to obtain verious resources
+                        </li>
+                    </ul>
+                    <li>Daily Shop Tab</li>
+                    <ul>
+                        <li>Here players spend real money to obtain various resources</li>
+                    </ul>
+                    <li>Monthly Packs Tab</li>
+                    <ul>
+                        <li>Here players spend real money to obtain a monthly subscription to have no ads and an
+                            increase in gold obtained</li>
+                    </ul>
+                </ul>
+            </section>
+            <section class="bottom_links"> <!--For the return to top link-->
+                <p><a href="#top">Return to Top</a></p>
+                <p><a href="../index.html">Home Page</a></p>
+            </section>
         </section>
     </main>
     <footer>
-        <p>&copy; <em>Aj Sison</em> 2/24/2025</p>
-        <p>I am not the owner of this game. This is for educational purposes. All images and videos of the game belong to &copy; Netmarble Corp. & Netmarble Nexus Inc. All Rights Reserved.</p>
+        <p>&copy; <em>Aj Sison</em> 3/9/2025</p>
+        <p>I am not the owner of this game. This is for educational purposes. All images and videos of the game belong
+            to &copy; Netmarble Corp. & Netmarble Nexus Inc. All Rights Reserved.</p>
         <p><a href="https://netmarble.com/en" id="netmarble_site">Netmarble's Website</a></p>
+        <p>Banner images were made using Google's Generative AI Gemini.</p>
         <small>
             <marquee>~(-.-)~</marquee>
         </small>
