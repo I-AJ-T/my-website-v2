@@ -147,7 +147,7 @@ ul.hero_stat_list {
 section#hero_stat_box {
     display: flex;
     flex-direction: row;
-    padding: 2em 1em;
+    padding: 1em 1em;
 }
 
 div#hero_stat_text {
