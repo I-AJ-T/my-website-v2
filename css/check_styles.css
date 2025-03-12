@@ -1,15 +1,16 @@
-/*Space here to make a custom variable*/
-/**/
-
 /*
 =====================================================
-|                   Template                        |
+|                Section Template                   |
 =====================================================
 */
 /*============  End of Template  ============*/
 
-/*Date Last Modified: 3/9/2025*/
+/*Date Last Modified: 3/12/2025*/
 /*Author: Aj Sison*/
+
+/*============ IMPORTANT NOTE ============*/
+/*CSS Files load in the order of styles.css, pvp_styles, heroes_styles, then check_styles*/
+/*The code cascades in a way. Most of the code that affects each page is on styles.css and the other css files have code that is more specific to their page*/
 
 /*
 =====================================================
@@ -28,7 +29,7 @@
 /*============  End of Header Changes  ============*/
 /*
 =====================================================
-|                   Checklist Flex Boxes Changes    |
+|             Checklist Flex Boxes Changes          |
 =====================================================
 */
 div#checklist_box_1, div#checklist_box_2 {
@@ -38,10 +39,26 @@ div#checklist_box_1, div#checklist_box_2 {
     justify-content: space-evenly;
     text-align: center;
 }
+
+/*These are for checklist_box_1*/
+div#secret_basement_box {
+    flex-basis: 50%;
+}
+div#missions_tab_box {
+    flex-basis: 50%;
+}
+
+/*These are for checklist_box_2*/
+div#conquest_tab_box {
+    flex-basis: 50%;
+}
+div#mines_box {
+    flex-basis: 50%;
+}
 /*============  End of Checklist Flex Boxes Changes  ============*/
 /*
 =====================================================
-|                   Checklist Flex Boxes Changes    |
+|            Shop Flex Boxes Changes           |
 =====================================================
 */
 div#shop_box_1, div#shop_box_2 {
@@ -50,5 +67,21 @@ div#shop_box_1, div#shop_box_2 {
     padding: 1em 1em;
     justify-content: space-evenly;
     text-align: center;
+}
+
+/*These are for shop_box_1*/
+div#summon_tab_box {
+    flex-basis: 50%;
+}
+div#shop_tab_box {
+    flex-basis: 50%;
+}
+
+/*These are for shop_box_2*/
+div#daily_shop_tab_box {
+    flex-basis: 50%;
+}
+div#monthly_packs_box {
+    flex-basis: 50%;
 }
 /*============  End of Checklist Flex Boxes Changes  ============*/

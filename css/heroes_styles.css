@@ -1,15 +1,16 @@
-/*Space here to make a custom variable*/
-/**/
-
 /*
 =====================================================
-|                   Template                        |
+|                Section Template                   |
 =====================================================
 */
 /*============  End of Template  ============*/
 
 /*Date Last Modified: 3/9/2025*/
 /*Author: Aj Sison*/
+
+/*============ IMPORTANT NOTE ============*/
+/*CSS Files load in the order of styles.css, pvp_styles, heroes_styles, then check_styles*/
+/*The code cascades in a way. Most of the code that affects each page is on styles.css and the other css files have code that is more specific to their page*/
 
 /*
 =====================================================
@@ -28,7 +29,7 @@
 /*============  End of Header Changes  ============*/
 /*
 =====================================================
-|                 Summon Flex Container                |
+|              Summon Flex Container                |
 =====================================================
 */
 div#hero_summon_pics_box {
@@ -141,7 +142,7 @@ ul.hero_stat_list {
 /*============  End of Hero Stat List Changes  ============*/
 /*
 =====================================================
-|                 Codex Flex Container                |
+|               Hero Stats Flex Container                |
 =====================================================
 */
 section#hero_stat_box {
@@ -162,7 +163,7 @@ div#hero_stat_pic {
 /*============  End of Codex Flex Container Changes  ============*/
 /*
 =====================================================
-|                 Pets Flex Container                |
+|                Pets Flex Container                |
 =====================================================
 */
 div#pet_pics_box {
@@ -190,13 +191,13 @@ div#pet_pic_3_box {
 /*============  End of Pets Flex Container Changes  ============*/
 /*
 =====================================================
-|                 Other Stats Flex Container                |
+|             Other Stats Flex Container            |
 =====================================================
 */
-div#other_stat_box_1,
-div#other_stat_box_2,
-div#other_stat_box_3,
-div#other_stat_box_4 {
+div#other_stat_container_1,
+div#other_stat_container_2,
+div#other_stat_container_3,
+div#other_stat_container_4 {
     display: flex;
     flex-direction: row;
     padding: 1em 1em;

@@ -1,15 +1,16 @@
-/*Space here to make a custom variable*/
-/**/
-
 /*
 =====================================================
-|                   Template                        |
+|                Section Template                   |
 =====================================================
 */
 /*============  End of Template  ============*/
 
 /*Date Last Modified: 3/9/2025*/
 /*Author: Aj Sison*/
+
+/*============ IMPORTANT NOTE ============*/
+/*CSS Files load in the order of styles.css, pvp_styles, heroes_styles, then check_styles*/
+/*The code cascades in a way. Most of the code that affects each page is on styles.css and the other css files have code that is more specific to their page*/
 
 /*
 =====================================================
@@ -33,13 +34,13 @@ section.extra_margin {
     background-position: center;
     text-align: center;
     padding: 2em 0;
-    border-bottom: 10px ridge #000000;
+    border-bottom: 10px ridge var(--img_and_vid_border_color);
 }
 
 #heading_text_box h1 {
     font-size: 5em;
-    -webkit-text-stroke: 3px #000000;
-    color: #ffffff;
+    -webkit-text-stroke: 3px var(--heading_text_outline);
+    color: var(--heading_color);
     margin: 0;
 }
 
@@ -116,26 +117,14 @@ div#event_pic_1_box {
     text-align: center;
 }
 
-img#event_pic_1 {
-    border: 10px ridge #000000;
-}
-
 div#event_pic_2_box {
     flex-basis: 33%;
     text-align: center;
 }
 
-img#event_pic_2 {
-    border: 10px ridge #000000;
-}
-
 div#event_pic_3_box {
     flex-basis: 33%;
     text-align: center;
-}
-
-img#event_pic_3 {
-    border: 10px ridge #000000;
 }
 
 /*============  End of Event Flex Container  ============*/

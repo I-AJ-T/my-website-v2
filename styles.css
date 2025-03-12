@@ -1,15 +1,37 @@
 /*Space here to make a custom variable*/
-/**/
-
+:root {
+    --body_color: #d6d6d6;
+    --nav_bar_color: #000000;
+    --nav_bar_hover_color: #ffd900;
+    --nav_bar_current_color: #ffd900;
+    --footer_color: #000000;
+    --icon_color: #ff0000;
+    --heading_color: #ffffff;
+    --heading_text_outline: #000000;
+    --overview_text_color: #000000;
+    --all_content_text: #000000;
+    --footer_text_color: #ffffff;
+    --img_and_vid_border_color: #000000;
+    --summon_button_text_color: #000000;
+    --summon_button_color: #ffd900;
+    --summon_button_border: #000000;
+    --summon_button_text_hover_color: #ffd900;
+    --summon_button_hover_color: #000000;
+    --summon_button_hover_border: #ffd900;
+}
 /*
 =====================================================
-|                   Template                        |
+|                Section Template                   |
 =====================================================
 */
 /*============  End of Template  ============*/
 
 /*Date Last Modified: 3/9/2025*/
 /*Author: Aj Sison*/
+
+/*============ IMPORTANT NOTE ============*/
+/*CSS Files load in the order of styles.css, pvp_styles, heroes_styles, then check_styles*/
+/*The code cascades in a way. Most of the code that affects each page is on styles.css and the other css files have code that is more specific to their page*/
 
 /*
 =====================================================
@@ -20,11 +42,12 @@ body {
     margin: 0px;
     line-height: 1.3;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(214, 214, 214);
+    background-color: var(--body_color);
 }
 
 main {
     margin: 4% 2%;
+    color: var(--all_content_text);
 }
 
 p {
@@ -33,12 +56,7 @@ p {
     margin-bottom: 1em;
 }
 
-ol {
-    margin-top: 0;
-    margin-bottom: 1.5em;
-}
-
-ul {
+ol, ul {
     margin-top: 0;
     margin-bottom: 1.5em;
 }
@@ -54,13 +72,14 @@ img {
     height: auto;
     max-width: 348.212px;
     max-height: 753.375px;
-    border: 10px ridge #000000;
+    border: 10px ridge var(--img_and_vid_border_color);
 }
 
 footer {
     padding: 40px 20px 40px 20px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--footer_color);
+    color: var(--footer_text_color);
+    border-top: 10px ridge var(--img_and_vid_border_color);
 }
 
 /*============  End of Global Changes  ============*/
@@ -115,19 +134,18 @@ footer {
     text-align: center;
     display: block;
     text-decoration: none;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--nav_bar_color);
+    color: #ffffff; /*Set if the Google Font doesn't work*/
     font-weight: bold;
     padding: 5% 0;
 }
 
 #nav_menu ul li a.current {
-    background-color: #ffd900;
+    background-color: var(--nav_bar_current_color);
 }
 
 #nav_menu ul li a:hover {
-    background-color: #ffd900;
-    color: #000000;
+    background-color: var(--nav_bar_hover_color);
 }
 
 a#logo_spot {
@@ -157,7 +175,7 @@ section#home_page_video_container {
     background-image: url(images/gemini_background_1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border-bottom: 10px ridge #000000;
+    border-bottom: 10px ridge var(--img_and_vid_border_color);
 }
 
 div#home_page_video_box {
@@ -169,7 +187,7 @@ video#home_page_video {
     height: 555px;
     display: block;
     margin: auto;
-    border: 10px ridge #000000;
+    border: 10px ridge var(--img_and_vid_border_color);
 }
 
 div#home_page_video_text_box {
@@ -181,32 +199,32 @@ div#home_page_video_text_box {
 div#home_page_video_text_box h1 {
     font-size: 4.5em;
     margin-top: 0;
-    color: white;
-    -webkit-text-stroke: 3px #000000;
+    color: var(--heading_color);
+    -webkit-text-stroke: 3px var(--heading_text_outline);
 }
 
 p#summon_text {
     font-size: 3em;
     margin: 0;
     margin-bottom: 10%;
-    color: white;
-    -webkit-text-stroke: 3px #000000;
+    color: var(--heading_color);
+    -webkit-text-stroke: 3px var(--heading_text_outline);
 }
 
 a#download_button {
-    background-color: #ffd700;
-    border: 6px solid black;
+    background-color: var(--summon_button_color);
+    border: 6px solid var(--summon_button_border);
     border-radius: 20px;
     font-size: 3em;
     padding: 20px;
-    color: #000000;
+    color: var(--summon_button_text_color);
     text-decoration: none;
 }
 
 a#download_button:hover {
-    background-color: #000000;
-    color: #ffd700;
-    border: 6px solid #ffd700;
+    background-color: var(--summon_button_hover_color);
+    color: var(--summon_button_text_hover_color);
+    border: 6px solid var(--summon_button_hover_border);
 }
 
 /*============  End of Home Page Video Flex Box Changes  ============*/
@@ -216,6 +234,7 @@ a#download_button:hover {
 =====================================================
 */
 h1#overview_text {
+    color: var(--overview_text_color);
     text-align: center;
     margin-top: 1em;
     margin-bottom: 0.2em;
@@ -282,7 +301,7 @@ section.bottom_links {
 }
 
 a#netmarble_site {
-    color: #ffffff;
+    color: var(--footer_text_color);
 }
 
 /*============  End of Div Changes for Bottom Links  ============*/
