@@ -17,14 +17,15 @@
     <!--Icons-->
     <script src="https://kit.fontawesome.com/073fc85712.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://sgimage.netmarble.com/favicon/skiagb/favicon_192.ico">
-    <title>Seven Knights - Hero | Pet</title>
+    <title>Seven Knights Idle Adventure - Hero | Pet</title>
 </head>
 
 <body>
     <nav id="nav_menu"> <!--Navigation menu options-->
         <ul class="nav_links"> <!--Flex container-->
             <li><a href="../index.html" id="logo_spot">
-                    <p id="logo_text">text</p> <!--Placeholder text to make the logo the same size as the other nav links-->
+                    <p id="logo_text">text</p>
+                    <!--Placeholder text to make the logo the same size as the other nav links-->
                 </a></li>
             <li class="honk_text"><a href="../index.html"><i class="fa-solid fa-house fa-sm"
                         style="color: var(--icon_color);"></i> Home</a></li>
@@ -50,24 +51,25 @@
             <h1 id="overview_text" class="kumar_text">Heroes and Pets Overview</h1>
             <section> <!--This Section is about the Hero Summons-->
                 <h2 class="main_section_heading_text">About Hero Summons:</h2>
-                <p>To gain more heroes you have to <strong>summon</strong> them. Heroes are summoned using either
+                <p>To gain more heroes players have to <strong>summon</strong> them. Heroes are summoned using either
                     <strong>summoning tickets</strong> or <strong>gems</strong>. Summoned heroes come in different
-                    <strong>rarities</strong>! The higher the rarity the stronger the hero!
+                    <strong>rarities</strong>! The higher the <strong>rarity</strong> the <strong>stronger</strong> the
+                    hero!
                 </p>
-                <div id="hero_summon_pics_box"> <!--Flex container-->
-                    <div id="hero_summon_pic_1_box">
-                        <img src="../images/hero_summon_1.png" alt="Screenshot of the Normal Hero Summon Page"
-                            id="hero_summon_pic_1">
+                <div id="hero_summon_pics_container"> <!--Flex container-->
+                    <div id="normal_hero_summon_box">
+                        <img src="../images/heroes_pets_page/hero_summon_1.png"
+                            alt="Screenshot of the Normal Hero Summon Page">
                         <figcaption class="pic_text">Normal Hero Summons</figcaption>
                     </div>
-                    <div id="hero_summon_pic_2_box">
-                        <img src="../images/hero_summon_2.png" alt="Screenshot of the Premium Hero Summon Page"
-                            id="hero_summon_pic_2">
+                    <div id="premium_hero_summon_box">
+                        <img src="../images/heroes_pets_page/hero_summon_2.png"
+                            alt="Screenshot of the Premium Hero Summon Page">
                         <figcaption class="pic_text">Premium Hero Summons</figcaption>
                     </div>
-                    <div id="hero_summon_pic_3_box">
-                        <img src="../images/hero_summon_3.png" alt="Screenshot of the Event Hero Summon Page"
-                            id="hero_summon_pic_3">
+                    <div id="event_hero_summon_box">
+                        <img src="../images/heroes_pets_page/hero_summon_3.png"
+                            alt="Screenshot of the Event Hero Summon Page">
                         <figcaption class="pic_text">Event Hero Summons</figcaption>
                     </div>
                 </div>
@@ -107,28 +109,35 @@
             </section>
             <section id="rarity_grid"> <!--This section is for the grid of images-->
                 <div id="hig">
-                    <img src="../images/high_lord.png" alt="Image of a High Lord card" class="rarity_grid_img_size">
+                    <img src="../images/heroes_pets_page/high_lord.png" alt="Image of a High Lord card"
+                        class="rarity_grid_img_size">
                 </div>
                 <div id="leg">
-                    <img src="../images/legendary.png" alt="Image of a Legendary card" class="rarity_grid_img_size">
+                    <img src="../images/heroes_pets_page/legendary.png" alt="Image of a Legendary card"
+                        class="rarity_grid_img_size">
                 </div>
                 <div id="uni">
-                    <img src="../images/unique.png" alt="Image of a Unique card" class="rarity_grid_img_size">
+                    <img src="../images/heroes_pets_page/unique.png" alt="Image of a Unique card"
+                        class="rarity_grid_img_size">
                 </div>
                 <div id="epi">
-                    <img src="../images/epic.png" alt="Image of a Epic card" class="rarity_grid_img_size">
+                    <img src="../images/heroes_pets_page/epic.png" alt="Image of a Epic card"
+                        class="rarity_grid_img_size">
                 </div>
                 <div id="rar">
-                    <img src="../images/rare.png" alt="Image of a Rare card" class="rarity_grid_img_size">
+                    <img src="../images/heroes_pets_page/rare.png" alt="Image of a Rare card"
+                        class="rarity_grid_img_size">
                 </div>
                 <div id="nor">
-                    <img src="../images/normal.png" alt="Image of a Normal card" class="rarity_grid_img_size">
+                    <img src="../images/heroes_pets_page/normal.png" alt="Image of a Normal card"
+                        class="rarity_grid_img_size">
                 </div>
                 <div id="ext">
-                    <img src="../images/extra.png" alt="Image of a Extra card" class="rarity_grid_img_size">
+                    <img src="../images/heroes_pets_page/extra.png" alt="Image of a Extra card"
+                        class="rarity_grid_img_size">
                 </div>
             </section> <!--This section is about the Codex-->
-            <section id="codex_box"> <!--Flex container-->
+            <section id="codex_container"> <!--Flex container-->
                 <div id="codex_text">
                     <h2 class="main_section_heading_text">About the Codex:</h2>
                     <p>The heroes are split into collections that are part of a codex. In the codex, as hero collections
@@ -153,14 +162,15 @@
                         in-game currencies as players progress through the game. <strong>JUST KEEP PLAYING!</strong>
                     </p>
                 </div>
-                <div id="codex_pic">
-                    <img src="../images/codex_screen.png" alt="Screenshot of the Codex Page">
+                <div id="codex_box">
+                    <img src="../images/heroes_pets_page/codex_screen.png" alt="Screenshot of the Codex Page">
                     <figcaption class="pic_text">Codex Screen</figcaption>
                 </div>
             </section>
-            <section id="hero_stat_box"> <!--This Section is about strengthening your heroes and is a Flex container-->
-                <div id="hero_stat_pic">
-                    <img src="../images/hero_page_2.png" alt="Screenshot of the alternate Hero Page">
+            <section id="hero_stat_container">
+                <!--This Section is about strengthening your heroes and is a Flex container-->
+                <div id="hero_stat_box">
+                    <img src="../images/heroes_pets_page/hero_page_2.png" alt="Screenshot of the alternate Hero Page">
                     <figcaption class="pic_text">Hero Stats Screen</figcaption>
                 </div>
                 <div id="hero_stat_text">
@@ -223,17 +233,18 @@
                     of pets is to increase stats. The stat increases get better as the pet's level increases. Also, just
                     like with the codex, the stat increases from pets are applied universally regardless of which pet is
                     being used.</p>
-                <div id="pet_pics_box"> <!--Flex container-->
-                    <div id="pet_pic_1_box">
-                        <img src="../images/pet_page.png" alt="Screenshot of the Pet Page">
+                <div id="pet_pics_container"> <!--Flex container-->
+                    <div id="pet_tab_box">
+                        <img src="../images/heroes_pets_page/pet_page.png" alt="Screenshot of the Pet Page">
                         <figcaption class="pic_text">Pet Page</figcaption>
                     </div>
-                    <div id="pet_pic_2_box">
-                        <img src="../images/pet_summon_1.png" alt="Screenshot of the Pet Summon Page">
+                    <div id="pet_summon_tab_box">
+                        <img src="../images/heroes_pets_page/pet_summon_1.png" alt="Screenshot of the Pet Summon Page">
                         <figcaption class="pic_text">Pet Summons</figcaption>
                     </div>
-                    <div id="pet_pic_3_box">
-                        <img src="../images/pet_summon_2.png" alt="Screenshot of the Select Pet Summon Page">
+                    <div id="select_pet_summon_box">
+                        <img src="../images/heroes_pets_page/pet_summon_2.png"
+                            alt="Screenshot of the Select Pet Summon Page">
                         <figcaption class="pic_text">Select Pet Summon</figcaption>
                     </div>
                 </div>
@@ -242,41 +253,43 @@
                 <h2 class="main_section_heading_text">The other ways to gain resources to raise stats:</h2>
                 <div id="other_stat_container_1"> <!--Flex container-->
                     <div id="hard_boss_box">
-                        <img src="../images/hard_boss.png" alt="Screenshot of the Hard Boss Battle Page">
+                        <img src="../images/heroes_pets_page/hard_boss.png"
+                            alt="Screenshot of the Hard Boss Battle Page">
                         <figcaption class="pic_text">Hard Boss Battle</figcaption>
                     </div>
                     <div id="insignia_summon_box">
-                        <img src="../images/insignia_summon.png" alt="Screenshot of the Insignia Summon Page">
+                        <img src="../images/heroes_pets_page/insignia_summon.png"
+                            alt="Screenshot of the Insignia Summon Page">
                         <figcaption class="pic_text">Insignia Summon</figcaption>
                     </div>
                 </div>
                 <div id="other_stat_container_2"> <!--Flex container-->
-                    <div id="influence">
-                        <img src="../images/influence.png" alt="Screenshot of the Influence Page">
+                    <div id="influence_box">
+                        <img src="../images/heroes_pets_page/influence.png" alt="Screenshot of the Influence Page">
                         <figcaption class="pic_text">Influence Page</figcaption>
                     </div>
                     <div id="traits_box">
-                        <img src="../images/traits.png" alt="Screenshot of the Traits Page">
+                        <img src="../images/heroes_pets_page/traits.png" alt="Screenshot of the Traits Page">
                         <figcaption class="pic_text">Traits Page</figcaption>
                     </div>
                 </div>
                 <div id="other_stat_container_3"> <!--Flex container-->
-                    <div id="relics">
-                        <img src="../images/relics.png" alt="Screenshot of the Relics Page">
+                    <div id="relics_box">
+                        <img src="../images/heroes_pets_page/relics.png" alt="Screenshot of the Relics Page">
                         <figcaption class="pic_text">Relics Page</figcaption>
                     </div>
                     <div id="essence_box">
-                        <img src="../images/essence.png" alt="Screenshot of the Essence Page">
+                        <img src="../images/heroes_pets_page/essence.png" alt="Screenshot of the Essence Page">
                         <figcaption class="pic_text">Essence Page</figcaption>
                     </div>
                 </div>
                 <div id="other_stat_container_4"> <!--Flex container-->
-                    <div id="blessing">
-                        <img src="../images/blessing.png" alt="Screenshot of the Blessing Page">
+                    <div id="blessing_box">
+                        <img src="../images/heroes_pets_page/blessing.png" alt="Screenshot of the Blessing Page">
                         <figcaption class="pic_text">Blessing Page</figcaption>
                     </div>
                     <div id="shackles_box">
-                        <img src="../images/shackles.png" alt="Screenshot of the Shackles Page">
+                        <img src="../images/heroes_pets_page/shackles.png" alt="Screenshot of the Shackles Page">
                         <figcaption class="pic_text">Shackles of Destiny Page</figcaption>
                     </div>
                 </div>
@@ -290,7 +303,7 @@
     <footer>
         <p>&copy; <em>Aj Sison</em> 3/9/2025</p>
         <p>I am not the owner of this game. This is for educational purposes. All images and videos of the game belong
-            to &copy; Netmarble Corp. & Netmarble Nexus Inc. All Rights Reserved.</p>
+            to &copy; Netmarble Corp. &amp; Netmarble Nexus Inc. All Rights Reserved.</p>
         <p><a href="https://netmarble.com/en" id="netmarble_site">Netmarble's Website</a></p>
         <p>Banner images were made using Google's Generative AI Gemini.</p>
         <small>

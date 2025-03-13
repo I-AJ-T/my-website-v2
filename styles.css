@@ -18,7 +18,9 @@
     --summon_button_text_hover_color: #ffd900;
     --summon_button_hover_color: #000000;
     --summon_button_hover_border: #ffd900;
+    /*These control all the colors for the website except for the background color for the video on the homepage so it stays black. There is a weird tiny gap between the video and its border and I can't figure out why it is there*/
 }
+
 /*
 =====================================================
 |                Section Template                   |
@@ -56,7 +58,8 @@ p {
     margin-bottom: 1em;
 }
 
-ol, ul {
+ol,
+ul {
     margin-top: 0;
     margin-bottom: 1.5em;
 }
@@ -70,8 +73,8 @@ li {
 img {
     width: 60%;
     height: auto;
-    max-width: 348.212px;
-    max-height: 753.375px;
+    max-width: 348px;
+    max-height: 750px;
     border: 10px ridge var(--img_and_vid_border_color);
 }
 
@@ -135,7 +138,8 @@ footer {
     display: block;
     text-decoration: none;
     background-color: var(--nav_bar_color);
-    color: #ffffff; /*Set if the Google Font doesn't work*/
+    color: #ffffff;
+    /*Set if the Google Font doesn't work*/
     font-weight: bold;
     padding: 5% 0;
 }
@@ -149,7 +153,7 @@ footer {
 }
 
 a#logo_spot {
-    background: url(images/seven_knights_logo.png) no-repeat;
+    background: url(images/banners_and_logo/seven_knights_logo.png) no-repeat;
     background-position: center;
     background-size: contain;
     width: 100%;
@@ -172,7 +176,7 @@ section#home_page_video_container {
     display: flex;
     flex-direction: row;
     padding: 3em 1em;
-    background-image: url(images/gemini_background_1.png);
+    background-image: url(images/banners_and_logo/gemini_background_1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-bottom: 10px ridge var(--img_and_vid_border_color);
@@ -183,11 +187,13 @@ div#home_page_video_box {
 }
 
 video#home_page_video {
-    width: 257px;
-    height: 555px;
+    width: 260px;
+    height: auto;
     display: block;
     margin: auto;
     border: 10px ridge var(--img_and_vid_border_color);
+    background-color: #000000;
+    /*This is to fill in the tiny gap between the video and the border*/
 }
 
 div#home_page_video_text_box {
@@ -332,12 +338,16 @@ a#netmarble_site {
     }
 
     video#home_page_video {
-        width: 342.4px;
-        height: 740.8px;
+        width: 342px;
+        height: auto;
     }
 
     #nav_menu ul li {
         font-size: 2em;
+    }
+
+    img {
+        border: 5px ridge var(--img_and_vid_border_color);
     }
 }
 

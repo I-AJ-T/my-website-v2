@@ -18,38 +18,39 @@
 =====================================================
 */
 #heading_text_box {
-    background: url(../images/hero_pet_banner.png);
+    background: url(../images/banners_and_logo/hero_pet_banner.png);
     background-repeat: no-repeat;
     background-size: 100% 350%;
     background-position: 0 -400px;
     text-align: center;
     padding: 2em 0;
-    border-bottom: 10px ridge #000000;
+    border-bottom: 10px ridge var(--img_and_vid_border_color);
 }
+
 /*============  End of Header Changes  ============*/
 /*
 =====================================================
 |              Summon Flex Container                |
 =====================================================
 */
-div#hero_summon_pics_box {
+div#hero_summon_pics_container {
     display: flex;
     flex-direction: row;
     padding: 1em 1em;
     justify-content: space-evenly;
 }
 
-div#hero_summon_pic_1_box {
+div#normal_hero_summon_box {
     flex-basis: 33%;
     text-align: center;
 }
 
-div#hero_summon_pic_2_box {
+div#premium_hero_summon_box {
     flex-basis: 33%;
     text-align: center;
 }
 
-div#hero_summon_pic_3_box {
+div#event_hero_summon_box {
     flex-basis: 33%;
     text-align: center;
 }
@@ -64,11 +65,12 @@ section#rarity_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-gap: 25px;
     grid-template-areas:
         "hig leg uni epi"
         "rar nor ext emp";
     padding: 2em;
+    text-align: center;
 }
 
 img.rarity_grid_img_size {
@@ -114,7 +116,7 @@ img.rarity_grid_img_size {
 |                 Codex Flex Container                |
 =====================================================
 */
-section#codex_box {
+section#codex_container {
     display: flex;
     flex-direction: row;
     padding: 2em 1em;
@@ -124,7 +126,7 @@ div#codex_text {
     flex-basis: 60%;
 }
 
-div#codex_pic {
+div#codex_box {
     flex-basis: 40%;
     text-align: center;
 }
@@ -145,7 +147,7 @@ ul.hero_stat_list {
 |               Hero Stats Flex Container                |
 =====================================================
 */
-section#hero_stat_box {
+section#hero_stat_container {
     display: flex;
     flex-direction: row;
     padding: 1em 1em;
@@ -155,7 +157,7 @@ div#hero_stat_text {
     flex-basis: 60%;
 }
 
-div#hero_stat_pic {
+div#hero_stat_box {
     flex-basis: 40%;
     text-align: center;
 }
@@ -166,24 +168,24 @@ div#hero_stat_pic {
 |                Pets Flex Container                |
 =====================================================
 */
-div#pet_pics_box {
+div#pet_pics_container {
     display: flex;
     flex-direction: row;
     padding: 1em 1em;
     justify-content: space-evenly;
 }
 
-div#pet_pic_1_box {
+div#pet_tab_box {
     flex-basis: 33%;
     text-align: center;
 }
 
-div#pet_pic_2_box {
+div#pet_summon_tab_box {
     flex-basis: 33%;
     text-align: center;
 }
 
-div#pet_pic_3_box {
+div#select_pet_summon_box {
     flex-basis: 33%;
     text-align: center;
 }
@@ -203,6 +205,17 @@ div#other_stat_container_4 {
     padding: 1em 1em;
     justify-content: space-evenly;
     text-align: center;
+}
+
+div#hard_boss_box,
+div#insignia_summon_box,
+div#influence_box,
+div#traits_box,
+div#relics_box,
+div#essence_box,
+div#blessing_box,
+div#shackles_box {
+    flex-basis: 50%;
 }
 
 /*============  End of Other Stats Flex Flex Container Changes  ============*/
@@ -230,8 +243,17 @@ div#other_stat_container_4 {
 }
 
 /*Changes Flex Boxes*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
+    section#codex_container {
+        flex-direction: column;
+    }
+    section#hero_stat_container {
+        flex-direction: column-reverse;
+    }
+}
 
+/*Changes Flex Boxes*/
+@media only screen and (max-width: 1000px) {
     div#hero_summon_pics_box,
     section#codex_box,
     section#hero_stat_box,

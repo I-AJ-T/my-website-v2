@@ -18,13 +18,13 @@
 =====================================================
 */
 #heading_text_box {
-    background: url(../images/check_shop_banner.png);
+    background: url(../images/banners_and_logo/check_shop_banner.png);
     background-repeat: no-repeat;
     background-size: 100% 350%;
     background-position: 0 -300px;
     text-align: center;
     padding: 2em 0;
-    border-bottom: 10px ridge #000000;
+    border-bottom: 10px ridge  var(--img_and_vid_border_color);
 }
 /*============  End of Header Changes  ============*/
 /*
@@ -32,7 +32,7 @@
 |             Checklist Flex Boxes Changes          |
 =====================================================
 */
-div#checklist_box_1, div#checklist_box_2 {
+div#checklist_container_1, div#checklist_container_2 {
     display: flex;
     flex-direction: row;
     padding: 1em 1em;
@@ -52,7 +52,7 @@ div#missions_tab_box {
 div#conquest_tab_box {
     flex-basis: 50%;
 }
-div#mines_box {
+div#mines_tab_box {
     flex-basis: 50%;
 }
 /*============  End of Checklist Flex Boxes Changes  ============*/
@@ -61,7 +61,7 @@ div#mines_box {
 |            Shop Flex Boxes Changes           |
 =====================================================
 */
-div#shop_box_1, div#shop_box_2 {
+div#shop_container_1, div#shop_container_2 {
     display: flex;
     flex-direction: row;
     padding: 1em 1em;
@@ -81,7 +81,7 @@ div#shop_tab_box {
 div#daily_shop_tab_box {
     flex-basis: 50%;
 }
-div#monthly_packs_box {
+div#monthly_packs_tab_box {
     flex-basis: 50%;
 }
 /*============  End of Checklist Flex Boxes Changes  ============*/
