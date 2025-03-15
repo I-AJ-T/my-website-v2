@@ -28,7 +28,7 @@
 */
 /*============  End of Template  ============*/
 
-/*Date Last Modified: 3/13/2025*/
+/*Date Last Modified: 3/15/2025*/
 /*Author: Aj Sison*/
 
 /*============ IMPORTANT NOTE ============*/
@@ -83,6 +83,7 @@ footer {
     background-color: var(--footer_color);
     color: var(--footer_text_color);
     border-top: 10px ridge var(--img_and_vid_border_color);
+    text-align: center;
 }
 
 /*============  End of Global Changes  ============*/
@@ -176,7 +177,7 @@ section#home_page_video_container {
     display: flex;
     flex-direction: row;
     padding: 3em 1em;
-    background-image: url(images/banners_and_logo/gemini_background_1.png);
+    background-image: url(images/banners_and_logo/home_screen_banner.png.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-bottom: 10px ridge var(--img_and_vid_border_color);
@@ -239,7 +240,7 @@ a#download_button:hover {
 |           Gameoverview Flex Box Changes           |
 =====================================================
 */
-h1#overview_text {
+h2#overview_text {
     color: var(--overview_text_color);
     text-align: center;
     margin-top: 1em;
@@ -349,11 +350,14 @@ a#netmarble_site {
     img {
         border: 5px ridge var(--img_and_vid_border_color);
     }
+    section#home_page_video_container {
+        background-image: url(/images/banners_and_logo/mobile_banner.png.webp);
+    }
 }
 
 /*Changes homepage overview text size*/
-@media only screen and (max-width: 635px) {
-    h1#overview_text {
+@media only screen and (max-width: 750px) {
+    h2#overview_text {
         font-size: 2em;
     }
 
@@ -400,7 +404,7 @@ a#netmarble_site {
 
 /*Changes the size of all the text for the game overview section*/
 @media only screen and (max-width: 485px) {
-    h1#overview_text {
+    h2#overview_text {
         font-size: 1.8em;
         margin-top: 1em;
     }
