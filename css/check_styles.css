@@ -24,15 +24,17 @@
     background-position: center;
     text-align: center;
     padding: 2em 0;
-    border-bottom: 10px ridge  var(--img_and_vid_border_color);
+    border-bottom: 10px ridge var(--img_and_vid_border_color);
 }
+
 /*============  End of Header Changes  ============*/
 /*
 =====================================================
 |             Checklist Flex Boxes Changes          |
 =====================================================
 */
-div#checklist_container_1, div#checklist_container_2 {
+div#checklist_container_1,
+div#checklist_container_2 {
     display: flex;
     flex-direction: row;
     padding: 1em 1em;
@@ -44,6 +46,7 @@ div#checklist_container_1, div#checklist_container_2 {
 div#secret_basement_box {
     flex-basis: 50%;
 }
+
 div#missions_tab_box {
     flex-basis: 50%;
 }
@@ -52,16 +55,19 @@ div#missions_tab_box {
 div#conquest_tab_box {
     flex-basis: 50%;
 }
+
 div#mines_tab_box {
     flex-basis: 50%;
 }
+
 /*============  End of Checklist Flex Boxes Changes  ============*/
 /*
 =====================================================
 |            Shop Flex Boxes Changes           |
 =====================================================
 */
-div#shop_container_1, div#shop_container_2 {
+div#shop_container_1,
+div#shop_container_2 {
     display: flex;
     flex-direction: row;
     padding: 1em 1em;
@@ -73,6 +79,7 @@ div#shop_container_1, div#shop_container_2 {
 div#summon_tab_box {
     flex-basis: 50%;
 }
+
 div#shop_tab_box {
     flex-basis: 50%;
 }
@@ -81,9 +88,11 @@ div#shop_tab_box {
 div#daily_shop_tab_box {
     flex-basis: 50%;
 }
+
 div#monthly_packs_tab_box {
     flex-basis: 50%;
 }
+
 /*============  End of Checklist Flex Boxes Changes  ============*/
 /*
 =====================================================
@@ -102,6 +111,7 @@ div#monthly_packs_tab_box {
     #heading_text_box h1 {
         font-size: 4em;
     }
+
     h2#overview_text {
         font-size: 2.5em;
     }
@@ -140,8 +150,10 @@ div#monthly_packs_tab_box {
     #heading_text_box {
         background-size: 200% 200%;
     }
+
     h2#overview_text {
         font-size: 1.17em;
     }
 }
+
 /*============  End of Media Queries  ============*/

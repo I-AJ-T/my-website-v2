@@ -167,9 +167,11 @@ div#event_pic_3_box {
     #heading_text_box h1 {
         font-size: 3em;
     }
+
     #heading_text_box {
         background-position-y: -150px;
     }
+
     h2#overview_text {
         font-size: 2em;
     }
@@ -180,11 +182,14 @@ div#event_pic_3_box {
         font-size: 2em;
         -webkit-text-stroke: 2px var(--heading_text_outline);
     }
+
     h2#overview_text {
         font-size: 1.4em;
     }
+
     #heading_text_box {
         background-position-y: -100px;
     }
 }
+
 /*============  End of Media Queries  ============*/

@@ -254,6 +254,7 @@ div#shackles_box {
     section#codex_container {
         flex-direction: column;
     }
+
     section#hero_stat_container {
         flex-direction: column-reverse;
     }
@@ -268,14 +269,16 @@ div#shackles_box {
 
 /*Changes Flex Boxes*/
 @media only screen and (max-width: 1000px) {
-    div#hero_summon_pics_box,
-    section#codex_box,
-    section#hero_stat_box,
-    div#pet_pics_box {
+
+    div#hero_summon_pics_container,
+    section#codex_container,
+    section#hero_stat_container,
+    div#pet_pics_container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
 }
 
 /*Changes grid settings*/
