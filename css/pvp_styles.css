@@ -1,12 +1,4 @@
-/*
-=====================================================
-|                Section Template                   |
-=====================================================
-*/
-
-/*============  End of Template  ============*/
-
-/*Date Last Modified: 3/17/2025*/
+/*Date Last Modified: 3/18/2025*/
 /*Author: Aj Sison*/
 
 /*============ IMPORTANT NOTE ============*/
@@ -178,6 +170,7 @@ div#event_pic_3_box {
     }
 }
 
+/*Change to text and background for mobile devices*/
 @media only screen and (max-width: 480px) {
     #heading_text_box h1 {
         font-size: 2em;

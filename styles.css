@@ -1,8 +1,7 @@
-/*Space here to make a custom variable*/
 :root {
     --body_color: #d6d6d6;
     --nav_bar_color: #000000;
-    --nav_bar_hover_color: #ffd900;
+    --nav_bar_hover_color: #ffffff;
     --nav_bar_current_color: #ffd900;
     --footer_color: #000000;
     --icon_color: #ff0000;
@@ -21,15 +20,7 @@
     /*These control all the colors for the website except for the background color for the video on the homepage so it stays black. There is a weird tiny gap between the video and its border and I can't figure out why it is there*/
 }
 
-/*
-=====================================================
-|                Section Template                   |
-=====================================================
-*/
-
-/*============  End of Template  ============*/
-
-/*Date Last Modified: 3/17/2025*/
+/*Date Last Modified: 3/18/2025*/
 /*Author: Aj Sison*/
 
 /*============ IMPORTANT NOTE ============*/
@@ -396,19 +387,19 @@ a#netmarble_site {
     }
 
     .main_section_heading_text::first-letter {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     p {
-        font-size: 0.85em;
-    }
-
-    p.list_heading::first-letter {
         font-size: 1em;
     }
 
+    p.list_heading::first-letter {
+        font-size: 1.5em;
+    }
+
     li {
-        font-size: 0.85em;
+        font-size: 1em;
     }
 }
 
@@ -447,9 +438,8 @@ a#netmarble_site {
 /*Changes to figcaption*/
 @media only screen and (max-width: 425px) {
     figcaption {
-        font-size: 0.7em;
+        font-size: 0.85em;
     }
 }
-
 
 /*============  End of Media Queries  ============*/

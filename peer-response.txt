@@ -1,4 +1,4 @@
-Matt Frix's Feedback of my website: 
+(1) Matt Frix's Feedback of my website: 
 
 Hey, Aj, cool website! I love the idea, and you made great use of flex boxes with your changes in version two!
 - Your website demonstrates excellent responsiveness.
@@ -8,21 +8,78 @@ Hey, Aj, cool website! I love the idea, and you made great use of flex boxes wit
 - I encountered an issue with video playback. Error: 'No video with supported format and MIME type found'. It may be because the video is encoded in H.265, which is not supported by all modern browsers.
 - I appreciate the inclusion of the 'Return to top' links. They are very effective, and I'm going to steal them!
 - The marquee is very cool and funny!
-
-_________________________________________
+_______________________________________________________________________________________________________________________________
 
 My Comments and the things I changed: 
 
 Changes:
-
 - Changed the video encoding setting to be H.264 and not the H.265
 	- According to Google the H.264 should be supported by most browsers 
-
 - Changed the background color from white to a grey color to make it easier on the eyes
 	- I agree with this even though I think the white is more asthetically pleasing. I didn't go with the gradient because I felt it would be to distracting from the text.
 
 My comments: 
-
 - I feel the nav bar is a good size. It is a little big when on mobile but I feel it helps make the buttons eaiser to press. Especially for one handed use. 
-
 - I feel my text size is very readable. At least on my monitors. This is tested on a 15 in laptop and then 2 1440p monitors and a iPhone 13 Pro Max
+
+===============================================================================================================================
+
+(2) Matt Frix's Feedback of my website:
+
+Hey, Aj, nice work on your website!!
+
+- "CSS Code Documentation: No old commented out code is left." In styles.css, lines 24-43 seem to contain commented out code that might serve as a template for future use. It may be worth considering the removal of these lines prior to project submission. 
+- "HTML & CSS code is properly indented." I noticed that the indentation of the HTML and CSS didn't seem quite right; this could be due to my Linux setup or perhaps magnification settings on my screen, but I found using Ctrl + Shift + I on each page made for easier viewing. 
+- "Responsive Web Design: All pages of your site must employ RWD strategies we learned in class so that your page looks good at a variety of screen widths, including mobile devices!" You've done an impressive job ensuring everything is responsive! I mentioned this last time as well, and I wanted to point it out again! 
+- "Functionality: All components of your website are functional." There was an issue with video playback previously, but it worked wonderfully this time!
+- "Your website has an aesthetic that would be pleasing to your users." You've done an excellent job with the background! The website is very enjoyable to navigate!
+- "Organization of Project Folder: Project files should be consistently organized into subfolders (such as an img folder, css folder, etc.)" It's great to see how you've made use of folders and subfolders to organize your website's content! 
+- "Your website uses basic Web Accessibility strategies we learned in class, including alt attributes for all images and clearly legible text (consider both font & choice of contrasting colors)" Some users might find the text a bit small on smaller screen widths. For instance, the media query on line 408 of styles.css sets the font-size to .85em, which could be slightly small for some.
+_______________________________________________________________________________________________________________________________
+
+Changes: 
+- Template code was taken out 
+- Double checked my indentation and it all seemed fine 
+- Made the smaller text a little bit bigger 
+
+===============================================================================================================================
+
+Jordie Peck's Feedback of my website:
+
+Your website is impressive! Even though I don’t personally play this game, I can see that you’ve created a well-organized reference that makes information easy to navigate.
+
+All your web pages should have a clear, consistent, and functional navigation menu between pages.
+A couple of small design tweaks could enhance usability. On the navigation bar, consider using a different color for the selected page than the hover effect. It’s not a major issue, but it could improve clarity.
+
+Your website uses the current conventions for usability
+Additionally, having both a home button and a clickable logo might be redundant. UI studies suggest that users naturally recognize the logo as a home button. If you keep the hover effect on the logo and remove the home button, it could make navigation feel more intuitive. Take that suggestion with a grain of salt though because for the life of me I can't remember if it was User Interface that taught me that or this class.
+
+All pages of your site must employ basic Web Accessibility strategies we learned in class, including alt attributes for all images and clearly legible text (consider both font & choice of contrasting colors)
+ One minor improvement could be increasing the size of the smaller text and putting it above or adding a hover that displays that text on the image. The images are just a tad bigger within reason so it might not be immediately noticeable while scrolling having the words below, I'm just making tiny gripes but when you scroll typically the title comes first so you can see what you're viewing. 
+
+Overall, your design is well thought out, and I couldn’t find anything significantly wrong. You have a great eye for usability and aesthetics!
+_______________________________________________________________________________________________________________________________
+
+Changes: 
+- Changed the hover color 
+
+===============================================================================================================================
+
+Evan William's Feedback of my website:
+
+Hi Aj, excellent website. I have never played Seven Knights, but I am certainly interested now after seeing your page. My advice is:
+
+1.  Center the return to top, and return home links on the page to help with alignment.
+
+Your website uses basic Web Accessibility strategies we learned in class, including alt attributes for all images and clearly legible text (consider both font & choice of contrasting colors)
+2. images become quite small at smaller viewport widths. I'd suggest making them stack into a single column so they are still readable. Mainly on the heroes and and checklist pages.  
+
+Your website uses basic Web Accessibility strategies we learned in class, including alt attributes for all images and clearly legible text (consider both font & choice of contrasting colors)
+3. The nav bar changes to vertical at a viewport width 1140px making it really large (almost the entire viewport height). I'd recommend reducing max-width in the media query or reduce the size of the padding in the nav bar(styles.css line 137).
+
+Responsive Web Design: All pages of your site must employ RWD strategies we learned in class so that your page looks good at a variety of screen widths, including mobile devices!
+Incredible job though!
+_______________________________________________________________________________________________________________________________
+
+Changes: 
+- Thank you for pointing out those things. Especially the pictures. There is an error in the code. I changed the wording on my html documents but not the css ones. They are supposed to go into a column for most of those. I also changed the space the images take up within their flex boxes to make them bigger.  Additionally, I am changing the nav bar workings to go to a column at a smaller resolution instead and centering the links at the bottom of my page. Thank you for the feedback! 
